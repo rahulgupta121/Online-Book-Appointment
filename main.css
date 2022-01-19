@@ -83,4 +83,9 @@
 .input-div{
     text-align: center;
 }
-
+.currency{
+    color: #00a993;
+}
+b{
+    font-size: 12px;
+}
