@@ -1,0 +1,86 @@
+.img-1, .img-2, .img-3, .img-4{
+    height: 80px;
+    width: 80px;
+}
+/* .logo-1-main-div, .logo-2-main-div, .logo-3-main-div, .logo-4-main-div{
+    height: 100px;
+    width: 100px;
+} */
+.stepper-status {
+    margin: 0;
+    padding: 0;
+    display: block;
+    margin: 14px auto;
+    width: 241px;
+    background: #526069;
+    border-right: 1px solid #fff;
+    color: #fff;
+    /* -webkit-transition: all 0s;
+    -moz-transition: all 0s;
+    -o-transition: all 0s; */
+    /* transition: all 1s ease-in-out; */
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+/* .container{
+    border: 1px solid black;
+} */
+/*#### For Pop message ####*/
+.pop-message {
+    background-color: #FBC02D;
+    color: black;
+    font-size: 13px;
+    font-weight: 700;
+    padding: 7px 0px 7px 0px;
+    text-align: center;
+    display: block;
+}
+.collaps-logo-div{
+    height: 20px;
+    width: 20px;
+}
+.collaps-logo-img {
+    /* height: 29px; */
+    width: 59px;
+    border-radius: 50%;
+    /* margin: -16px 0px; */
+}
+.heading-card{
+    color: black;
+    font-weight: 400;
+    font-size: 17px;
+}
+.down-arrow{
+    color: black; 
+}
+.button-collaps {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+.btn-link.focus, .btn-link:focus {
+    text-decoration: none;
+    border-color: transparent;
+    box-shadow: none;
+}
+.btn-link:hover {
+    color: #0056b3;
+    text-decoration: none;
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.input-div input{ 
+    width: 100%;
+    padding: 7px 0px 70px 11px;
+    font-size: 21px; 
+}
+.next-step-btn{
+    background: #f96868;
+}
+.input-div{
+    text-align: center;
+}
+
