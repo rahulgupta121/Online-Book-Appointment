@@ -7,21 +7,19 @@
     width: 100px;
 } */
 .stepper-status {
-    margin: 0;
+    /* margin: 0; */
     padding: 0;
     display: block;
     margin: 14px auto;
-    width: 100%;
+    width: 165px;
     background: #526069;
     border-right: 1px solid #fff;
     color: #fff;
-    /* -webkit-transition: all 0s;
-    -moz-transition: all 0s;
-    -o-transition: all 0s; */
     /* transition: all 1s ease-in-out; */
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
+    text-align: center;
 }
 /* .container{
     border: 1px solid black;
@@ -112,5 +110,7 @@ tr:hover {
     margin-bottom: 0;
     list-style: none;
 }
-
+.heading-dermamina{
+    padding: 0px 12px;
+}
 

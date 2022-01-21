@@ -1,25 +1,32 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!---JQuery CDN --->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <!--- CSS Include  -->
-    <link rel="stylesheet" href="main.css">
-    <!----Fa Fa Icon CDN -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Online Booking</title>
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  </head>
-  <body> 
-    <div class="main-div-home">
-      <div class="container main-div">
-        <!-- <div class="row d-flex mb-5">
+  <!---JQuery CDN --->
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+  <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <!--- CSS Include  -->
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="jquary.css">
+  <!----Fa Fa Icon CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Online Booking</title>
+
+</head>
+
+<body>
+  <div class="main-div-home">
+    <div class="container main-div">
+      <!-- <div class="row d-flex mb-5">
          <div class="logo-1-main-div col-sm-3 col-md-3 col-lg-3 text-center">
             <div class="logo-1-main">
               <a class="">
@@ -63,980 +70,1304 @@
           </div> 
         </div> -->
 
-        <div class="row justify-content-around">
-          <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-            <div class="logo-2-main-div col-sm-3 col-md-3 col-lg-3 text-center">
-              <li class="nav-item" role="presentation">
-                <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">
-                  <img class="img-1" src="https://connect-dermamina.pabau.me/redesign_icons/location.svg">
-                </a>
-            <div class="stepper-status text-center">
-              <span>Dermamina </span> 
+      <div class="row justify-content-around"> 
+        <ul class="nav nav-pills mb-3 nav-justified" id="pills-tab" role="tablist"> 
+
+          <li class="nav-item logo-2-main-div col-sm-3 col-md-3 col-lg-3 text-center" role="presentation"> 
+              <a class="nav-link active" id="pills-home-tab" data-toggle="tab" href="#pills-home" role="tab"
+                aria-controls="pills-home" aria-selected="true">
+                <img class="img-1" src="https://connect-dermamina.pabau.me/redesign_icons/location.svg">
+              </a>
+              <div class="stepper-status text-center">
+                <span class="heading-dermamina">Dermamina </span>
+              </div> 
+          </li>
+
+          <li class="nav-item logo-2-main-div col-sm-3 col-md-3 col-lg-3 text-center nav nav-pills" id="pills-tab"
+            role="tablist">
+            <div class="" role="presentation">
+              <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab"
+                aria-controls="pills-home" aria-selected="false">
+                <img class="img-2" src="https://connect-dermamina.pabau.me/redesign_icons/list.svg">
+              </a>
+              <div class="stepper-status text-center">
+                <span class="choose-service">Choose Service </span>
+                <!-- <span class="after-choose-service">Non-Surgical Nose Job + Lip Filler + Chin</span> -->
+              </div>
             </div>
           </li>
-        </div>
-        <div class="logo-2-main-div col-sm-3 col-md-3 col-lg-3 text-center nav nav-pills" id="pills-tab" role="tablist">
-          <li class="nav-item" role="presentation">
-            <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="false">
-              <img class="img-2" src="https://connect-dermamina.pabau.me/redesign_icons/list.svg">
-            </a>
-            <div class="stepper-status text-center">
-              <span class="choose-service">Choose Service </span> 
-              <!-- <span class="after-choose-service">Non-Surgical Nose Job + Lip Filler + Chin</span> -->
+
+          <li class="nav-item logo-2-main-div col-sm-3 col-md-3 col-lg-3 text-center" id="pills-tab"
+            role="tablist">
+            <div class="" role="presentation">
+              <a class="nav-link" id="pills-profile-tab3" data-toggle="pill" href="#pills-Changestaff" role="tab"
+                aria-controls="pills-Changestaff" aria-selected="false">
+                <img class="img-3" src="https://connect-dermamina.pabau.me/redesign_icons/staff.svg">
+              </a>
+              <div class="stepper-status text-center">
+                <span class="heading-staff">Choose Staff </span>
+              </div>
             </div>
           </li>
-        </div>
-        <div class="logo-2-main-div col-sm-3 col-md-3 col-lg-3 text-center nav nav-pills" id="pills-tab" role="tablist">
-          <li class="nav-item" role="presentation">
-            <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="false">
-              <img class="img-3" src="https://connect-dermamina.pabau.me/redesign_icons/staff.svg">
-            </a>
-            <div class="stepper-status text-center">
-              <span  class="heading-staff">Choose Staff </span> 
-            </div>
-          </li>
-        </div>
-        <div class="logo-2-main-div col-sm-3 col-md-3 col-lg-3 text-center nav nav-pills" id="pills-tab" role="tablist">
-          <li class="nav-item" role="presentation">
-            <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="false">
-              <img class="img-4" src="https://connect-dermamina.pabau.me/redesign_icons/calendar.svg">
-            </a>
-            <div class="stepper-status text-center">
-              <span class="heading-time pl-3 pr-3">Choose Time </span> 
-            </div>
-          </li>
-        </div>
-        
-        </ul>
-        </div>
-         
-          
-          <!-- <li class="nav-item" role="presentation">
-            <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Profile</a>
-          </li>
-          <li class="nav-item" role="presentation">
-            <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Contact</a>
-          </li>
-        </ul> -->
 
-        <!-- <div class="tab-content" id="pills-tabContent">
-          <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">Hello</div>
-          <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">Hello 1</div>
-          <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">Hello 2</div>
-        </div> -->
-        
-
-        <!---- For pop Message ---->
-        <div class="pop-message">
-          <p class="mb-0"><i class="fa fa-commenting-o" aria-hidden="true"></i> All appointments start with a consultation to answer all your questions and to understand what you are looking to achieve.   </p>
-        </div>
-
-        
-        
-        <!---  acordian collaps   -->
-        <div class="tab-content" id="pills-tabContent">
-          <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-
-          
-        <div id="accordion" >
-          <!-- card 1 for accordian -->
-          <div class="card tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-            <div class="card-header pb-0" id="headingOne">
-              <h5 class="mb-0">
-                <button class="btn btn-link collapsed button-collaps" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                  <div class="collaps-sec-1">
-                    <span class="collaps-logo-div">
-                    <img class="collaps-logo-img" src="https://dermamina.pabau.me/cdn/file_attachments/8607/category_images/607ecf048be52_135428.png?1618923268498">
-                  </span>
-                  <span class="heading-card"> Non-Surgical Nose Job (Rhinoplasty) </span>
-                  </div>  
-
-                   <div class="collaps-sec-2">
-                    <span class="down-arrow"><i class="arrow-expand fa fa-chevron-down " aria-hidden="true"></i>  </span>
-                  </div>
-
-                </button>
-              </h5>
-            </div>
-
-
-            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
-              <table class="table">
-                <tbody>
-                  <tr>
-                    <td  class="form-check">
-                    <p>
-                    <b> Non-Surgical Nose Job</b> 
-                      <span href="#" data-toggle="popover" title="Popover Header" data-content="Non-invasive alternative to traditional rhinoplasty. A great choice for those who want to improve the shape of their nose"><i class="fa fa-info-circle"></i></span>
-                     
-                    </p></td>
-                    <td><span class="currency"> £450</span></td>
-                    <td><input type="checkbox"></td>
-                  </tr>
-                  <tr>
-                    <td><p><b>Non-Surgical Nose Job + Lip Filler + Chin</b> 
-                      <span href="#" data-toggle="popover" title="Popover Header" data-content="Non-invasive alternative to traditional rhinoplasty. A great choice for those who want to improve the shape of their nose"><i class="fa fa-info-circle"></i></span>
-                     
-                    </p></td> 
-                    <td><span class="currency"> £860</span></td>
-                    <td><input class="btn-checkbox" type="checkbox">
-                        <span class="checking-box"></span></td>
-                  </tr>
-                  <tr>
-                    <td><p><b>Non-Surgical Nose Job + Tear Trough</b> 
-                      <span href="#" data-toggle="popover" title="Popover Header" data-content="Non-invasive alternative to traditional rhinoplasty. A great choice for those who want to improve the shape of their nose"><i class="fa fa-info-circle"></i></span>
-                     
-                    </p></td>  
-                    <td> <span class="currency">£750</span></td>
-                    <td><input class="btn-checkbox" type="checkbox"></td>
-                  </tr>
-                  <tr>
-                    <td><p><b>Non-Surgical Nose Job + Chin Augmentation</b> 
-                      <span href="#" data-toggle="popover" title="Popover Header" data-content="Non-invasive alternative to traditional rhinoplasty. A great choice for those who want to improve the shape of their nose"><i class="fa fa-info-circle"></i></span>
-                     
-                    </p></td>
-                    <td><span class="currency">£840</span></td>
-                    <td><input class="btn-checkbox" type="checkbox"></td>
-                  </tr>
-                  <tr>
-                    <td><p><b>Non-Surgical Nose Job + Lip Filler</b> 
-                      <span href="#" data-toggle="popover" title="Popover Header" data-content="Non-invasive alternative to traditional rhinoplasty. A great choice for those who want to improve the shape of their nose"><i class="fa fa-info-circle"></i></span>
-                     
-                    </p></td>  
-                    <td> <span class="currency"> £640</span></td>
-                    <td><input class="btn-checkbox" type="checkbox"></td>
-                  </tr> 
-                </tbody>
-              </table>
-            </div> 
+          <div class="logo-2-main-div col-sm-3 col-md-3 col-lg-3 text-center nav nav-pills" id="pills-tab"
+            role="tablist">
+            <li class="nav-item" role="presentation">
+              <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab"
+                aria-controls="pills-home" aria-selected="false">
+                <img class="img-4" src="https://connect-dermamina.pabau.me/redesign_icons/calendar.svg">
+              </a>
+              <div class="stepper-status text-center">
+                <span class="heading-time pl-3 pr-3">Choose Time </span>
+              </div>
+            </li>
           </div>
+
+        </ul>
+      </div>
+
+ 
+      <!---- For pop Message ---->
+      <div class="pop-message">
+        <p class="mb-0"><i class="fa fa-commenting-o" aria-hidden="true"></i> All appointments start with a consultation
+          to answer all your questions and to understand what you are looking to achieve. </p>
+      </div>
+
+
+
+      <!---  acordian collaps   -->
+      <div class="tab-content" >
+        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+
+
+          <div id="accordion">
+            <!-- card 1 for accordian -->
+            <div class="card tab-pane fade show active" id="pills-home" role="tabpanel"
+              aria-labelledby="pills-home-tab">
+              <div class="card-header pb-0" id="headingOne">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed button-collaps" data-toggle="collapse"
+                    data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                    <div class="collaps-sec-1">
+                      <span class="collaps-logo-div">
+                        <img class="collaps-logo-img"
+                          src="https://dermamina.pabau.me/cdn/file_attachments/8607/category_images/607ecf048be52_135428.png?1618923268498">
+                      </span>
+                      <span class="heading-card"> Non-Surgical Nose Job (Rhinoplasty) </span>
+                    </div>
+
+                    <div class="collaps-sec-2">
+                      <span class="down-arrow"><i class="arrow-expand fa fa-chevron-down " aria-hidden="true"></i>
+                      </span>
+                    </div>
+
+                  </button>
+                </h5>
+              </div>
+
+
+              <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                <table class="table">
+                  <tbody>
+                    <tr>
+                      <td class="form-check">
+                        <p>
+                          <b> Non-Surgical Nose Job</b>
+                          <span href="#" data-toggle="popover" title="Popover Header"
+                            data-content="Non-invasive alternative to traditional rhinoplasty. A great choice for those who want to improve the shape of their nose"><i
+                              class="fa fa-info-circle"></i></span>
+
+                        </p>
+                      </td>
+                      <td><span class="currency"> £450</span></td>
+                      <td><input type="checkbox"></td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p><b>Non-Surgical Nose Job + Lip Filler + Chin</b>
+                          <span href="#" data-toggle="popover" title="Popover Header"
+                            data-content="Non-invasive alternative to traditional rhinoplasty. A great choice for those who want to improve the shape of their nose"><i
+                              class="fa fa-info-circle"></i></span>
+
+                        </p>
+                      </td>
+                      <td><span class="currency"> £860</span></td>
+                      <td><input class="btn-checkbox" type="checkbox">
+                        <span class="checking-box"></span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p><b>Non-Surgical Nose Job + Tear Trough</b>
+                          <span href="#" data-toggle="popover" title="Popover Header"
+                            data-content="Non-invasive alternative to traditional rhinoplasty. A great choice for those who want to improve the shape of their nose"><i
+                              class="fa fa-info-circle"></i></span>
+
+                        </p>
+                      </td>
+                      <td> <span class="currency">£750</span></td>
+                      <td><input class="btn-checkbox" type="checkbox"></td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p><b>Non-Surgical Nose Job + Chin Augmentation</b>
+                          <span href="#" data-toggle="popover" title="Popover Header"
+                            data-content="Non-invasive alternative to traditional rhinoplasty. A great choice for those who want to improve the shape of their nose"><i
+                              class="fa fa-info-circle"></i></span>
+
+                        </p>
+                      </td>
+                      <td><span class="currency">£840</span></td>
+                      <td><input class="btn-checkbox" type="checkbox"></td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p><b>Non-Surgical Nose Job + Lip Filler</b>
+                          <span href="#" data-toggle="popover" title="Popover Header"
+                            data-content="Non-invasive alternative to traditional rhinoplasty. A great choice for those who want to improve the shape of their nose"><i
+                              class="fa fa-info-circle"></i></span>
+
+                        </p>
+                      </td>
+                      <td> <span class="currency"> £640</span></td>
+                      <td><input class="btn-checkbox" type="checkbox"></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
 
             <!-- card 2 for accordian -->
             <div class="card">
               <div class="card-header pt-0 pb-0" id="headingTwo">
                 <h5 class="mb-0">
-                  <button class="btn btn-link collapsed button-collaps" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                  <div class="collaps-sec-1">
-                    <span class="collaps-logo-div">
-                    <img class="collaps-logo-img" src="https://dermamina.pabau.me/cdn/file_attachments/8607/category_images/5ee4c23657f2f_131030.jpeg?1592050231032">
-                  </span>
-                  <span class="heading-card"> Dermal Filler </span>
-                  </div>  
+                  <button class="btn btn-link collapsed button-collaps" data-toggle="collapse"
+                    data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    <div class="collaps-sec-1">
+                      <span class="collaps-logo-div">
+                        <img class="collaps-logo-img"
+                          src="https://dermamina.pabau.me/cdn/file_attachments/8607/category_images/5ee4c23657f2f_131030.jpeg?1592050231032">
+                      </span>
+                      <span class="heading-card"> Dermal Filler </span>
+                    </div>
 
-                   <div class="collaps-sec-2">
-                    <span class="down-arrow"><i class="arrow-expand fa fa-chevron-down " aria-hidden="true"></i>  </span>
-                  </div>
+                    <div class="collaps-sec-2">
+                      <span class="down-arrow"><i class="arrow-expand fa fa-chevron-down " aria-hidden="true"></i>
+                      </span>
+                    </div>
 
-                </button>
-              </h5>
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                <table class="table">
+                  <tbody>
+                    <tr>
+                      <td>
+                        <p><b>Tear Trough (under eye treatment)</b>
+                          <span href="#" data-toggle="popover" title="Popover Header"
+                            data-content="Non-invasive alternative to traditional rhinoplasty. A great choice for those who want to improve the shape of their nose"><i
+                              class="fa fa-info-circle"></i></span>
+
+                        </p>
+                      </td>
+                      <td><span class="currency"> £390</span></td>
+                      <td><input class="btn-checkbox" type="checkbox"></td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p><b>1.0ml Lip Filler</b>
+                          <span href="#" data-toggle="popover" title="Popover Header"
+                            data-content="Non-invasive alternative to traditional rhinoplasty. A great choice for those who want to improve the shape of their nose"><i
+                              class="fa fa-info-circle"></i></span>
+
+                        </p>
+                      </td>
+                      <td><span class="currency"> £250</span></td>
+                      <td><input class="btn-checkbox" type="checkbox"></td>
+                    </tr>
+                    <tr>
+                      <td><b>1.5ml Lip Filler </b></td>
+                      <td><span class="currency"> £390</span></td>
+                      <td><input class="btn-checkbox" type="checkbox"></td>
+                    </tr>
+                    <tr>
+                      <td><b>2.0ml Lip Filler </b></td>
+                      <td><span class="currency">£450 </span></td>
+                      <td><input class="btn-checkbox" type="checkbox"></td>
+                    </tr>
+                    <tr>
+                      <td><b>1.0ml Jaw Filler </b></td>
+                      <td><span class="currency"> £340</span></td>
+                      <td><input class="btn-checkbox" type="checkbox"></td>
+                    </tr>
+                    <tr>
+                      <td><b>2.0ml Jaw Filler </b></td>
+                      <td><span class="currency">£680 </span></td>
+                      <td><input class="btn-checkbox" type="checkbox"></td>
+                    </tr>
+                    <tr>
+                      <td><b>3.0ml Jaw Filler </b></td>
+                      <td><span class="currency">£860 </span></td>
+                      <td><input class="btn-checkbox" type="checkbox"></td>
+                    </tr>
+                    <tr>
+                      <td><b>4.0ml Jaw Filler </b></td>
+                      <td><span class="currency">£990 </span></td>
+                      <td><input class="btn-checkbox" type="checkbox"></td>
+                    </tr>
+                    <tr>
+                      <td><b>1.0ml Chin Augmentation </b></td>
+                      <td><span class="currency"> £340</span></td>
+                      <td><input class="btn-checkbox" type="checkbox"></td>
+                    </tr>
+                    <tr>
+                      <td><b>1.0ml Chin Augmentation </b></td>
+                      <td><span class="currency"> £340</span></td>
+                      <td><input class="btn-checkbox" type="checkbox"></td>
+                    </tr>
+                    <tr>
+                      <td><b>2.0ml Chin Augmentation </b></td>
+                      <td><span class="currency">£680 </span></td>
+                      <td><input class="btn-checkbox" type="checkbox"></td>
+                    </tr>
+                    <tr>
+                      <td><b>3.0ml Chin Augmentation </b></td>
+                      <td><span class="currency">£850 </span></td>
+                      <td><input class="btn-checkbox" type="checkbox"></td>
+                    </tr>
+                    <tr>
+                      <td><b>4.0ml Chin Augmentation </b></td>
+                      <td><span class="currency">£1090 </span></td>
+                      <td><input class="btn-checkbox" type="checkbox"></td>
+                    </tr>
+                    <tr>
+                      <td><b>1.0ml Chin Augmentation </b></td>
+                      <td><span class="currency">£270 </span></td>
+                      <td><input class="btn-checkbox" type="checkbox"></td>
+                    </tr>
+                    <tr>
+                      <td><b>2.0ml Chin Augmentation </b></td>
+                      <td><span class="currency"> £500</span></td>
+                      <td><input class="btn-checkbox" type="checkbox"></td>
+                    </tr>
+                    <tr>
+                      <td><b>3.0ml Chin Augmentation </b></td>
+                      <td><span class="currency"> £690</span></td>
+                      <td><input class="btn-checkbox" type="checkbox"></td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p><b>1.0ml Nasolabial Folds (Smile Lines) </b>
+                          <span href="#" data-toggle="popover" title="Popover Header"
+                            data-content="Non-invasive alternative to traditional rhinoplasty. A great choice for those who want to improve the shape of their nose"><i
+                              class="fa fa-info-circle"></i></span>
+
+                        </p>
+                      </td>
+                      <td> <span class="currency">£270 </span></td>
+                      <td><input class="btn-checkbox" type="checkbox"></td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p><b>2.0ml Nasolabial Folds (Smile Lines) </b>
+                          <span href="#" data-toggle="popover" title="Popover Header"
+                            data-content="Non-invasive alternative to traditional rhinoplasty. A great choice for those who want to improve the shape of their nose"><i
+                              class="fa fa-info-circle"></i></span>
+
+                        </p>
+                      </td>
+                      <td><span class="currency">£450 </span></td>
+                      <td><input class="btn-checkbox" type="checkbox"></td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p><b>1.0ml Corner of the mouth </b>
+                          <span href="" data-toggle="popover" title="Popover Header"
+                            data-content="Non-invasive alternative to traditional rhinoplasty. A great choice for those who want to improve the shape of their nose"><i
+                              class="fa fa-info-circle"></i></span>
+
+                        </p>
+                      </td>
+                      <td><span class="currency">£300 </span></td>
+                      <td><input class="btn-checkbox" type="checkbox"></td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p><b>2.0ml Corner of the mouth </b>
+                          <span href="#" data-toggle="popover" title="Popover Header"
+                            data-content="Non-invasive alternative to traditional rhinoplasty. A great choice for those who want to improve the shape of their nose"><i
+                              class="fa fa-info-circle"></i></span>
+
+                        </p>
+                      </td>
+                      <td><span class="currency"> £520</span></td>
+                      <td><input class="btn-checkbox" type="checkbox"></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
             </div>
-            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-              <table class="table">
-                <tbody>
-                  <tr>
-                    <td><p><b>Tear Trough (under eye treatment)</b> 
-                      <span href="#" data-toggle="popover" title="Popover Header" data-content="Non-invasive alternative to traditional rhinoplasty. A great choice for those who want to improve the shape of their nose"><i class="fa fa-info-circle"></i></span>
-                     
-                    </p></td>
-                    <td><span class="currency"> £390</span></td>
-                    <td><input class="btn-checkbox" type="checkbox"></td>
-                  </tr>
-                  <tr>
-                    <td><p><b>1.0ml Lip Filler</b> 
-                      <span href="#" data-toggle="popover" title="Popover Header" data-content="Non-invasive alternative to traditional rhinoplasty. A great choice for those who want to improve the shape of their nose"><i class="fa fa-info-circle"></i></span>
-                     
-                    </p></td>  
-                    <td><span class="currency"> £250</span></td>
-                    <td><input class="btn-checkbox" type="checkbox"></td>
-                  </tr>
-                  <tr> 
-                    <td><b>1.5ml Lip Filler </b></td>
-                    <td><span class="currency"> £390</span></td>
-                    <td><input class="btn-checkbox" type="checkbox"></td>
-                  </tr>
-                  <tr>
-                    <td><b>2.0ml Lip Filler </b></td> 
-                    <td><span class="currency">£450 </span></td>
-                    <td><input class="btn-checkbox" type="checkbox"></td>
-                  </tr>
-                  <tr>
-                    <td><b>1.0ml Jaw Filler </b></td> 
-                    <td><span class="currency"> £340</span></td>
-                    <td><input class="btn-checkbox" type="checkbox"></td>
-                  </tr> 
-                  <tr>
-                    <td><b>2.0ml Jaw Filler </b></td> 
-                    <td><span class="currency">£680 </span></td>
-                    <td><input class="btn-checkbox" type="checkbox"></td>
-                  </tr> 
-                  <tr>
-                    <td><b>3.0ml Jaw Filler </b></td> 
-                    <td><span class="currency">£860 </span></td>
-                    <td><input class="btn-checkbox" type="checkbox"></td>
-                  </tr> 
-                  <tr>
-                    <td><b>4.0ml Jaw Filler </b></td> 
-                    <td><span class="currency">£990 </span></td>
-                    <td><input class="btn-checkbox" type="checkbox"></td>
-                  </tr> 
-                  <tr>
-                    <td><b>1.0ml Chin Augmentation </b></td> 
-                    <td><span class="currency"> £340</span></td>
-                    <td><input class="btn-checkbox" type="checkbox"></td>
-                  </tr> 
-                  <tr>
-                    <td><b>1.0ml Chin Augmentation </b></td> 
-                    <td><span class="currency"> £340</span></td>
-                    <td><input class="btn-checkbox" type="checkbox"></td>
-                  </tr> 
-                  <tr>
-                    <td><b>2.0ml Chin Augmentation </b></td> 
-                    <td><span class="currency">£680 </span></td>
-                    <td><input class="btn-checkbox" type="checkbox"></td>
-                  </tr> 
-                  <tr>
-                    <td><b>3.0ml Chin Augmentation </b></td> 
-                    <td><span class="currency">£850 </span></td>
-                    <td><input class="btn-checkbox" type="checkbox"></td>
-                  </tr> 
-                  <tr>
-                    <td><b>4.0ml Chin Augmentation </b></td> 
-                    <td><span class="currency">£1090 </span></td>
-                    <td><input class="btn-checkbox" type="checkbox"></td>
-                  </tr> 
-                  <tr>
-                    <td><b>1.0ml Chin Augmentation </b></td> 
-                    <td><span class="currency">£270 </span></td>
-                    <td><input class="btn-checkbox" type="checkbox"></td>
-                  </tr> 
-                  <tr>
-                    <td><b>2.0ml Chin Augmentation </b></td> 
-                    <td><span class="currency"> £500</span></td>
-                    <td><input  class="btn-checkbox"type="checkbox"></td>
-                  </tr> 
-                  <tr>
-                    <td><b>3.0ml Chin Augmentation </b></td> 
-                    <td><span class="currency"> £690</span></td>
-                    <td><input class="btn-checkbox" type="checkbox"></td>
-                  </tr> 
-                  <tr>
-                    <td><p><b>1.0ml Nasolabial Folds (Smile Lines) </b> 
-                      <span href="#" data-toggle="popover" title="Popover Header" data-content="Non-invasive alternative to traditional rhinoplasty. A great choice for those who want to improve the shape of their nose"><i class="fa fa-info-circle"></i></span>
-                     
-                    </p></td>
-                    <td> <span class="currency">£270 </span></td>
-                    <td><input class="btn-checkbox" type="checkbox"></td>
-                  </tr>
-                  <tr>
-                    <td><p><b>2.0ml Nasolabial Folds (Smile Lines) </b> 
-                      <span href="#" data-toggle="popover" title="Popover Header" data-content="Non-invasive alternative to traditional rhinoplasty. A great choice for those who want to improve the shape of their nose"><i class="fa fa-info-circle"></i></span>
-                     
-                    </p></td>
-                    <td><span class="currency">£450 </span></td>
-                    <td><input class="btn-checkbox" type="checkbox"></td>
-                  </tr>
-                  <tr>
-                    <td><p><b>1.0ml Corner of the mouth </b> 
-                      <span href="" data-toggle="popover" title="Popover Header" data-content="Non-invasive alternative to traditional rhinoplasty. A great choice for those who want to improve the shape of their nose"><i class="fa fa-info-circle"></i></span>
-                     
-                    </p></td>
-                    <td><span class="currency">£300 </span></td>
-                    <td><input class="btn-checkbox" type="checkbox"></td>
-                  </tr>
-                  <tr>
-                    <td><p><b>2.0ml Corner of the mouth </b> 
-                      <span href="#" data-toggle="popover" title="Popover Header" data-content="Non-invasive alternative to traditional rhinoplasty. A great choice for those who want to improve the shape of their nose"><i class="fa fa-info-circle"></i></span>
-                     
-                    </p></td>
-                    <td><span class="currency"> £520</span></td>
-                    <td><input class="btn-checkbox" type="checkbox"></td>
-                  </tr>
-                </tbody>
-              </table>
+
+            <!---   Card 3  -->
+            <div class="card">
+              <div class="card-header pt-0 pb-0" id="headingThree">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed button-collaps" data-toggle="collapse"
+                    data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    <div class="collaps-sec-1">
+                      <span class="collaps-logo-div">
+                        <img class="collaps-logo-img"
+                          src="https://dermamina.pabau.me/cdn/file_attachments/8607/category_images/5ee4c23657f2f_131030.jpeg?1592050231032">
+                      </span>
+                      <span class="heading-card"> Dermal Filler Packages </span>
+                    </div>
+
+                    <div class="collaps-sec-2">
+                      <span class="down-arrow"><i class="arrow-expand fa fa-chevron-down " aria-hidden="true"></i>
+                      </span>
+                    </div>
+
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                <table class="table">
+                  <tbody>
+                    <tr>
+                      <td>
+                        <p><b>3ml Filler Package </b>
+                          <span href="#" data-toggle="popover" title="Popover Header"
+                            data-content="Non-invasive alternative to traditional rhinoplasty. A great choice for those who want to improve the shape of their nose"><i
+                              class="fa fa-info-circle"></i></span>
+
+                        </p>
+                      </td>
+                      <td><span class="currency"> £860</span></td>
+                      <td><input class="btn-checkbox" type="checkbox"></td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p><b>4ml Filler Package </b>
+                          <span href="#" data-toggle="popover" title="Popover Header"
+                            data-content="Non-invasive alternative to traditional rhinoplasty. A great choice for those who want to improve the shape of their nose"><i
+                              class="fa fa-info-circle"></i></span>
+
+                        </p>
+                      </td>
+                      <td><span class="currency">£990 </span></td>
+                      <td><input class="btn-checkbox" type="checkbox"></td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p><b>5ml Filler Package </b>
+                          <span href="#" data-toggle="popover" title="Popover Header"
+                            data-content="Non-invasive alternative to traditional rhinoplasty. A great choice for those who want to improve the shape of their nose"><i
+                              class="fa fa-info-circle"></i></span>
+
+                        </p>
+                      </td>
+                      <td><span class="currency"> £1250</span></td>
+                      <td><input class="btn-checkbox" type="checkbox"></td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p><b>6ml Filler Package </b>
+                          <span href="#" data-toggle="popover" title="Popover Header"
+                            data-content="Non-invasive alternative to traditional rhinoplasty. A great choice for those who want to improve the shape of their nose"><i
+                              class="fa fa-info-circle"></i></span>
+
+                        </p>
+                      </td>
+                      <td><span class="currency"> £1450</span></td>
+                      <td><input class="btn-checkbox" type="checkbox"></td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p><b>3ml Filler Package </b>
+                          <span href="#" data-toggle="popover" title="Popover Header"
+                            data-content="Non-invasive alternative to traditional rhinoplasty. A great choice for those who want to improve the shape of their nose"><i
+                              class="fa fa-info-circle"></i></span>
+
+                        </p>
+                      </td>
+                      <td><span class="currency"> £640</span></td>
+                      <td><input class="btn-checkbox" type="checkbox"></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
             </div>
-          </div>
 
-          <!---   Card 3  -->
-          <div class="card">
-            <div class="card-header pt-0 pb-0" id="headingThree">
-              <h5 class="mb-0">
-                <button class="btn btn-link collapsed button-collaps" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                  <div class="collaps-sec-1">
-                    <span class="collaps-logo-div">
-                    <img class="collaps-logo-img" src="https://dermamina.pabau.me/cdn/file_attachments/8607/category_images/5ee4c23657f2f_131030.jpeg?1592050231032">
-                  </span>
-                  <span class="heading-card"> Dermal Filler Packages </span>
-                  </div>  
+            <!---   Card 4  -->
+            <div class="card">
+              <div class="card-header pt-0 pb-0" id="headingFour">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed button-collaps" data-toggle="collapse"
+                    data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    <div class="collaps-sec-1">
+                      <span class="collaps-logo-div">
+                        <img class="collaps-logo-img"
+                          src="https://dermamina.pabau.me/cdn/file_attachments/8607/category_images/5ecfa04f2ace3_122815.png?1590665294135">
+                      </span>
+                      <span class="heading-card"> Anti-Aging Injections </span>
+                    </div>
 
-                   <div class="collaps-sec-2">
-                    <span class="down-arrow"><i class="arrow-expand fa fa-chevron-down " aria-hidden="true"></i>  </span>
-                  </div>
+                    <div class="collaps-sec-2">
+                      <span class="down-arrow"><i class="arrow-expand fa fa-chevron-down " aria-hidden="true"></i>
+                      </span>
+                    </div>
 
-                </button>
-              </h5>
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                <table class="table">
+                  <tbody>
+                    <tr>
+                      <td>
+                        <p><b>1 Area Anti-Ageing Injections </b>
+                          <span href="#" data-toggle="popover" title="Popover Header"
+                            data-content="Non-invasive alternative to traditional rhinoplasty. A great choice for those who want to improve the shape of their nose"><i
+                              class="fa fa-info-circle"></i></span>
+
+                        </p>
+                      </td>
+                      <td><span class="currency"> £175</span></td>
+                      <td><input class="btn-checkbox" type="checkbox"></td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p><b>2 Area Anti-Ageing Injections </b>
+                          <span href="#" data-toggle="popover" title="Popover Header"
+                            data-content="Non-invasive alternative to traditional rhinoplasty. A great choice for those who want to improve the shape of their nose"><i
+                              class="fa fa-info-circle"></i></span>
+
+                        </p>
+                      </td>
+                      <td><span class="currency"> £240</span></td>
+                      <td><input class="btn-checkbox" type="checkbox"></td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p><b>3 Area Anti-Ageing Injections </b>
+                          <span href="#" data-toggle="popover" title="Popover Header"
+                            data-content="Non-invasive alternative to traditional rhinoplasty. A great choice for those who want to improve the shape of their nose"><i
+                              class="fa fa-info-circle"></i></span>
+
+                        </p>
+                      </td>
+                      <td><span class="currency"> £290</span></td>
+                      <td><input class="btn-checkbox" type="checkbox"></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
             </div>
-            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-              <table class="table">
-                <tbody>
-                  <tr>
-                    <td><p><b>3ml Filler Package </b> 
-                      <span href="#" data-toggle="popover" title="Popover Header" data-content="Non-invasive alternative to traditional rhinoplasty. A great choice for those who want to improve the shape of their nose"><i class="fa fa-info-circle"></i></span>
-                     
-                    </p></td>  
-                    <td><span class="currency"> £860</span></td>
-                    <td><input class="btn-checkbox"  type="checkbox"></td>
-                  </tr>
-                  <tr>
-                    <td><p><b>4ml Filler Package </b> 
-                      <span href="#" data-toggle="popover" title="Popover Header" data-content="Non-invasive alternative to traditional rhinoplasty. A great choice for those who want to improve the shape of their nose"><i class="fa fa-info-circle"></i></span>
-                     
-                    </p></td>  
-                    <td><span class="currency">£990 </span></td>
-                    <td><input class="btn-checkbox"  type="checkbox"></td>
-                  </tr> 
-                  <tr>
-                    <td><p><b>5ml Filler Package </b> 
-                      <span href="#" data-toggle="popover" title="Popover Header" data-content="Non-invasive alternative to traditional rhinoplasty. A great choice for those who want to improve the shape of their nose"><i class="fa fa-info-circle"></i></span>
-                     
-                    </p></td>  
-                    <td><span class="currency"> £1250</span></td>
-                    <td><input class="btn-checkbox" type="checkbox"></td>
-                  </tr>
-                  <tr>
-                    <td><p><b>6ml Filler Package </b> 
-                      <span href="#" data-toggle="popover" title="Popover Header" data-content="Non-invasive alternative to traditional rhinoplasty. A great choice for those who want to improve the shape of their nose"><i class="fa fa-info-circle"></i></span>
-                     
-                    </p></td>  
-                    <td><span class="currency"> £1450</span></td>
-                    <td><input class="btn-checkbox" type="checkbox"></td>
-                  </tr> 
-                  <tr>
-                    <td><p><b>3ml Filler Package </b> 
-                      <span href="#" data-toggle="popover" title="Popover Header" data-content="Non-invasive alternative to traditional rhinoplasty. A great choice for those who want to improve the shape of their nose"><i class="fa fa-info-circle"></i></span>
-                     
-                    </p></td>  
-                    <td><span class="currency"> £640</span></td>
-                    <td><input class="btn-checkbox" type="checkbox"></td>
-                  </tr>
-                </tbody>
-              </table>
+
+            <!---   Card 5  -->
+            <div class="card">
+              <div class="card-header pt-0 pb-0" id="headingFive">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed button-collaps" data-toggle="collapse"
+                    data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                    <div class="collaps-sec-1">
+                      <span class="collaps-logo-div">
+                        <img class="collaps-logo-img"
+                          src="https://dermamina.pabau.me/cdn/file_attachments/8607/category_images/60d091dcdfa9d_141924.png?1624281565453">
+                      </span>
+                      <span class="heading-card"> Other Treatments </span>
+                    </div>
+
+                    <div class="collaps-sec-2">
+                      <span class="down-arrow"><i class="arrow-expand fa fa-chevron-down " aria-hidden="true"></i>
+                      </span>
+                    </div>
+
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+                <table class="table">
+                  <tbody>
+                    <tr>
+                      <td><b>Now Snow </b></td>
+                      <td><span class="currency">£20 </span></td>
+                      <td><input class="btn-checkbox" type="checkbox"></td>
+                    </tr>
+                    <tr>
+                      <td><b>Hyper Hydrolisis </b></td>
+                      <td><span class="currency"> £350</span></td>
+                      <td><input class="btn-checkbox" type="checkbox"></td>
+                    </tr>
+                    <tr>
+                      <td><b>no show</b></td>
+                      <td><span class="currency">£20 </span></td>
+                      <td><input class="btn-checkbox" type="checkbox"></td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p><b>Gummy Smile </b>
+                          <span href="" data-toggle="popover" title="Popover Header"
+                            data-content="Non-invasive alternative to traditional rhinoplasty. A great choice for those who want to improve the shape of their nose"><i
+                              class="fa fa-info-circle"></i></span>
+
+                        </p>
+                      </td>
+                      <td><span class="currency"> £20</span></td>
+                      <td><input class="btn-checkbox" type="checkbox"></td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p><b>Brow Lift</b>
+                          <span href="" data-toggle="popover" title="Popover Header"
+                            data-content="Non-invasive alternative to traditional rhinoplasty. A great choice for those who want to improve the shape of their nose"><i
+                              class="fa fa-info-circle"></i></span>
+
+                        </p>
+                      </td>
+                      <td><span class="currency"> £240</span></td>
+                      <td><input class="btn-checkbox" type="checkbox"></td>
+                    </tr>
+
+                    <tr>
+                      <td>
+                        <p><b>Neck (The Nefertiti Lift) </b>
+                          <span href="" data-toggle="popover" title="Popover Header"
+                            data-content="Non-invasive alternative to traditional rhinoplasty. A great choice for those who want to improve the shape of their nose"><i
+                              class="fa fa-info-circle"></i></span>
+
+                        </p>
+                      </td>
+                      <td><span class="currency"> £280</span></td>
+                      <td><input class="btn-checkbox" type="checkbox"></td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p><b>Masseter (wide-set jaw)</b>
+                          <span href="" data-toggle="popover" title="Popover Header"
+                            data-content="Non-invasive alternative to traditional rhinoplasty. A great choice for those who want to improve the shape of their nose"><i
+                              class="fa fa-info-circle"></i></span>
+
+                        </p>
+                      </td>
+                      <td><span class="currency"> £340</span></td>
+                      <td><input class="btn-checkbox" type="checkbox"></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
             </div>
-          </div>
 
-          <!---   Card 4  -->
-          <div class="card">
-            <div class="card-header pt-0 pb-0" id="headingFour">
-              <h5 class="mb-0">
-                <button class="btn btn-link collapsed button-collaps" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                  <div class="collaps-sec-1">
-                    <span class="collaps-logo-div">
-                    <img class="collaps-logo-img" src="https://dermamina.pabau.me/cdn/file_attachments/8607/category_images/5ecfa04f2ace3_122815.png?1590665294135">
-                  </span>
-                  <span class="heading-card"> Anti-Aging Injections </span>
-                  </div>  
+            <!---   Card 6  -->
+            <div class="card">
+              <div class="card-header pt-0 pb-0" id="headingSix">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed button-collaps" data-toggle="collapse"
+                    data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                    <div class="collaps-sec-1">
+                      <span class="collaps-logo-div">
+                        <img class="collaps-logo-img"
+                          src="https://dermamina.pabau.me/cdn/file_attachments/8607/category_images/60e5d5590388a_172457.jpeg?1625675098301">
+                      </span>
+                      <span class="heading-card">PRP Hair/Beard Restoration</span>
+                    </div>
 
-                   <div class="collaps-sec-2">
-                    <span class="down-arrow"><i class="arrow-expand fa fa-chevron-down " aria-hidden="true"></i>  </span>
-                  </div>
+                    <div class="collaps-sec-2">
+                      <span class="down-arrow"><i class="arrow-expand fa fa-chevron-down " aria-hidden="true"></i>
+                      </span>
+                    </div>
 
-                </button>
-              </h5>
-            </div>
-            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
-              <table class="table">
-                <tbody>
-                  <tr>
-                    <td><p><b>1 Area Anti-Ageing Injections </b> 
-                      <span href="#" data-toggle="popover" title="Popover Header" data-content="Non-invasive alternative to traditional rhinoplasty. A great choice for those who want to improve the shape of their nose"><i class="fa fa-info-circle"></i></span>
-                     
-                    </p></td>  
-                    <td><span class="currency"> £175</span></td>
-                    <td><input  class="btn-checkbox" type="checkbox"></td>
-                  </tr>
-                  <tr>
-                    <td><p><b>2 Area Anti-Ageing Injections </b> 
-                      <span href="#" data-toggle="popover" title="Popover Header" data-content="Non-invasive alternative to traditional rhinoplasty. A great choice for those who want to improve the shape of their nose"><i class="fa fa-info-circle"></i></span>
-                     
-                    </p></td>  
-                    <td><span class="currency"> £240</span></td>
-                    <td><input class="btn-checkbox"  type="checkbox"></td>
-                  </tr>
-                  <tr>
-                    <td><p><b>3 Area Anti-Ageing Injections </b> 
-                      <span href="#" data-toggle="popover" title="Popover Header" data-content="Non-invasive alternative to traditional rhinoplasty. A great choice for those who want to improve the shape of their nose"><i class="fa fa-info-circle"></i></span>
-                     
-                    </p></td>  
-                    <td><span class="currency"> £290</span></td>
-                    <td><input class="btn-checkbox" type="checkbox"></td>
-                  </tr> 
-                </tbody>
-              </table>
-            </div>
-          </div>
-          
-          <!---   Card 5  -->
-          <div class="card">
-            <div class="card-header pt-0 pb-0" id="headingFive">
-              <h5 class="mb-0">
-                <button class="btn btn-link collapsed button-collaps" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                  <div class="collaps-sec-1">
-                    <span class="collaps-logo-div">
-                    <img class="collaps-logo-img" src="https://dermamina.pabau.me/cdn/file_attachments/8607/category_images/60d091dcdfa9d_141924.png?1624281565453">
-                  </span>
-                  <span class="heading-card"> Other Treatments </span>
-                  </div>  
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion">
+                <table class="table">
+                  <tbody>
+                    <tr>
+                      <td>
+                        <p><b>PRP Hair Restoration </b>
+                          <span href="" data-toggle="popover" title="Popover Header"
+                            data-content="Non-invasive alternative to traditional rhinoplasty. A great choice for those who want to improve the shape of their nose"><i
+                              class="fa fa-info-circle"></i></span>
 
-                   <div class="collaps-sec-2">
-                    <span class="down-arrow"><i class="arrow-expand fa fa-chevron-down " aria-hidden="true"></i>  </span>
-                  </div>
+                        </p>
+                      </td>
+                      <td><span class="currency">£450 </span></td>
+                      <td><input class="btn-checkbox" type="checkbox"></td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p><b>PRP Beard Restoration </b>
+                          <span href="" data-toggle="popover" title="Popover Header"
+                            data-content="Non-invasive alternative to traditional rhinoplasty. A great choice for those who want to improve the shape of their nose"><i
+                              class="fa fa-info-circle"></i></span>
 
-                </button>
-              </h5>
-            </div>
-            <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
-              <table class="table">
-                <tbody>
-                  <tr>
-                    <td><b>Now Snow </b></td>
-                    <td><span class="currency">£20 </span></td>
-                    <td><input class="btn-checkbox" type="checkbox"></td>
-                  </tr>
-                  <tr>
-                    <td><b>Hyper Hydrolisis </b></td>
-                    <td><span class="currency"> £350</span></td>
-                    <td><input class="btn-checkbox" type="checkbox"></td>
-                  </tr>
-                  <tr>
-                    <td><b>no show</b></td>
-                    <td><span class="currency">£20 </span></td>
-                    <td><input class="btn-checkbox" type="checkbox"></td>
-                  </tr> 
-                  <tr>
-                    <td><p><b>Gummy Smile </b> 
-                      <span href="" data-toggle="popover" title="Popover Header" data-content="Non-invasive alternative to traditional rhinoplasty. A great choice for those who want to improve the shape of their nose"><i class="fa fa-info-circle"></i></span>
-                     
-                    </p></td>
-                    <td><span class="currency"> £20</span></td>
-                    <td><input class="btn-checkbox" type="checkbox"></td>
-                  </tr>
-                  <tr>
-                    <td><p><b>Brow Lift</b> 
-                      <span href="" data-toggle="popover" title="Popover Header" data-content="Non-invasive alternative to traditional rhinoplasty. A great choice for those who want to improve the shape of their nose"><i class="fa fa-info-circle"></i></span>
-                     
-                    </p></td>
-                    <td><span class="currency"> £240</span></td>
-                    <td><input class="btn-checkbox" type="checkbox"></td>
-                  </tr> 
-
-                  <tr>
-                    <td><p><b>Neck (The Nefertiti Lift) </b> 
-                      <span href="" data-toggle="popover" title="Popover Header" data-content="Non-invasive alternative to traditional rhinoplasty. A great choice for those who want to improve the shape of their nose"><i class="fa fa-info-circle"></i></span>
-                     
-                    </p></td>
-                    <td><span class="currency"> £280</span></td>
-                    <td><input class="btn-checkbox" type="checkbox"></td>
-                  </tr> 
-                  <tr>
-                    <td><p><b>Masseter (wide-set jaw)</b> 
-                      <span href="" data-toggle="popover" title="Popover Header" data-content="Non-invasive alternative to traditional rhinoplasty. A great choice for those who want to improve the shape of their nose"><i class="fa fa-info-circle"></i></span>
-                     
-                    </p></td>
-                    <td><span class="currency"> £340</span></td>
-                    <td><input class="btn-checkbox" type="checkbox"></td>
-                  </tr> 
-                </tbody>
-              </table>
-            </div>
-          </div>
-          
-          <!---   Card 6  -->
-          <div class="card">
-            <div class="card-header pt-0 pb-0" id="headingSix">
-              <h5 class="mb-0">
-                <button class="btn btn-link collapsed button-collaps" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                  <div class="collaps-sec-1">
-                    <span class="collaps-logo-div">
-                    <img class="collaps-logo-img" src="https://dermamina.pabau.me/cdn/file_attachments/8607/category_images/60e5d5590388a_172457.jpeg?1625675098301">
-                  </span>
-                  <span class="heading-card">PRP Hair/Beard Restoration</span>
-                  </div>  
-
-                   <div class="collaps-sec-2">
-                    <span class="down-arrow"><i class="arrow-expand fa fa-chevron-down " aria-hidden="true"></i>  </span>
-                  </div>
-
-                </button>
-              </h5>
-            </div>
-            <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion">
-              <table class="table">
-                <tbody>
-                  <tr>
-                    <td><p><b>PRP Hair Restoration </b> 
-                      <span href="" data-toggle="popover" title="Popover Header" data-content="Non-invasive alternative to traditional rhinoplasty. A great choice for those who want to improve the shape of their nose"><i class="fa fa-info-circle"></i></span>
-                     
-                    </p></td>
-                    <td><span class="currency">£450 </span></td>
-                    <td><input class="btn-checkbox" type="checkbox"></td>
-                  </tr>
-                  <tr>
-                    <td><p><b>PRP Beard Restoration </b> 
-                      <span href="" data-toggle="popover" title="Popover Header" data-content="Non-invasive alternative to traditional rhinoplasty. A great choice for those who want to improve the shape of their nose"><i class="fa fa-info-circle"></i></span>
-                     
-                    </p></td>
-                    <td><span class="currency">£860 </span></td>
-                    <td><input class="btn-checkbox" type="checkbox"></td>
-                  </tr>
-                  <tr>
-                    <td><p><b>PRP Hair + Beard Restoration </b> 
-                      <span href="" data-toggle="popover" title="Popover Header" data-content="Non-invasive alternative to traditional rhinoplasty. A great choice for those who want to improve the shape of their nose"><i class="fa fa-info-circle"></i></span>
+                        </p>
+                      </td>
+                      <td><span class="currency">£860 </span></td>
+                      <td><input class="btn-checkbox" type="checkbox"></td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p><b>PRP Hair + Beard Restoration </b>
+                          <span href="" data-toggle="popover" title="Popover Header"
+                            data-content="Non-invasive alternative to traditional rhinoplasty. A great choice for those who want to improve the shape of their nose"><i
+                              class="fa fa-info-circle"></i></span>
                       <td><span class="currency">£480 </span></td>
-                    <td><input class="btn-checkbox" type="checkbox"></td>
-                  </tr>
-                </tbody>
-              </table>
+                      <td><input class="btn-checkbox" type="checkbox"></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
             </div>
-          </div>
-          
-          <!---   Card 7  -->
-          <div class="card">
-            <div class="card-header pt-0 pb-0" id="headingSeven">
-              <h5 class="mb-0">
-                <button class="btn btn-link collapsed button-collaps" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
-                  <div class="collaps-sec-1">
-                    <span class="collaps-logo-div">
-                    <img class="collaps-logo-img" src="https://dermamina.pabau.me/cdn/file_attachments/8607/category_images/61d324a260296_163026.jpeg?1641227426726">
-                  </span>
-                  <span class="heading-card"> PRP Vampire Facial</span>
-                  </div>  
 
-                   <div class="collaps-sec-2">
-                    <span class="down-arrow"><i class="arrow-expand fa fa-chevron-down " aria-hidden="true"></i>  </span>
-                  </div>
+            <!---   Card 7  -->
+            <div class="card">
+              <div class="card-header pt-0 pb-0" id="headingSeven">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed button-collaps" data-toggle="collapse"
+                    data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                    <div class="collaps-sec-1">
+                      <span class="collaps-logo-div">
+                        <img class="collaps-logo-img"
+                          src="https://dermamina.pabau.me/cdn/file_attachments/8607/category_images/61d324a260296_163026.jpeg?1641227426726">
+                      </span>
+                      <span class="heading-card"> PRP Vampire Facial</span>
+                    </div>
 
-                </button>
-              </h5>
+                    <div class="collaps-sec-2">
+                      <span class="down-arrow"><i class="arrow-expand fa fa-chevron-down " aria-hidden="true"></i>
+                      </span>
+                    </div>
+
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordion">
+                <table class="table">
+                  <tbody>
+                    <tr>
+                      <td>
+                        <p><b>PRP Vampire Facial</b>
+                          <span href="" data-toggle="popover" title="Popover Header"
+                            data-content="Non-invasive alternative to traditional rhinoplasty. A great choice for those who want to improve the shape of their nose"><i
+                              class="fa fa-info-circle"></i></span>
+
+                        </p>
+                      </td>
+                      <td><span class="currency">£320 </span></td>
+                      <td><input class="btn-checkbox" type="checkbox"></td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p><b>PRP Vampire Facial + Hair Restoration </b>
+                          <span href="" data-toggle="popover" title="Popover Header"
+                            data-content="Non-invasive alternative to traditional rhinoplasty. A great choice for those who want to improve the shape of their nose"><i
+                              class="fa fa-info-circle"></i></span>
+
+                        </p>
+                      </td>
+                      <td><span class="currency">£480</span></td>
+                      <td><input class="btn-checkbox" type="checkbox"></td>
+                    </tr>
+                    <tr>
+                      <td><b>PRP Vampire Facial + Mesotherapy </b></td>
+                      <td><span class="currency">£450</span></td>
+                      <td><input class="btn-checkbox" type="checkbox"></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
             </div>
-            <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordion">
-              <table class="table">
-                <tbody>
-                  <tr>
-                    <td><p><b>PRP Vampire Facial</b> 
-                      <span href="" data-toggle="popover" title="Popover Header" data-content="Non-invasive alternative to traditional rhinoplasty. A great choice for those who want to improve the shape of their nose"><i class="fa fa-info-circle"></i></span>
-                     
-                    </p></td>
-                    <td><span class="currency">£320 </span></td>
-                    <td><input class="btn-checkbox"  type="checkbox"></td>
-                  </tr>
-                  <tr>
-                    <td><p><b>PRP Vampire Facial + Hair Restoration </b> 
-                      <span href="" data-toggle="popover" title="Popover Header" data-content="Non-invasive alternative to traditional rhinoplasty. A great choice for those who want to improve the shape of their nose"><i class="fa fa-info-circle"></i></span>
-                     
-                    </p></td>
-                    <td><span class="currency">£480</span></td>
-                    <td><input class="btn-checkbox" type="checkbox"></td>
-                  </tr>
-                  <tr>
-                    <td><b>PRP Vampire Facial + Mesotherapy </b></td>
-                    <td><span class="currency">£450</span></td>
-                    <td><input class="btn-checkbox" type="checkbox"></td>
-                  </tr> 
-                </tbody>
-              </table>
+
+            <!---   Card 8  -->
+            <div class="card">
+              <div class="card-header pt-0 pb-0" id="headingEight">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed button-collaps" data-toggle="collapse"
+                    data-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                    <div class="collaps-sec-1">
+                      <span class="collaps-logo-div">
+                        <img class="collaps-logo-img"
+                          src="https://dermamina.pabau.me/cdn/file_attachments/8607/category_images/61d3247364d9a_162939.png?1641227379915">
+                      </span>
+                      <span class="heading-card"> Hydrafacial® </span>
+                    </div>
+
+                    <div class="collaps-sec-2">
+                      <span class="down-arrow"><i class="arrow-expand fa fa-chevron-down " aria-hidden="true"></i>
+                      </span>
+                    </div>
+
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseEight" class="collapse" aria-labelledby="headingEight" data-parent="#accordion">
+                <table class="table">
+                  <tbody>
+                    <tr>
+                      <td>
+                        <p><b>Signature Hydrafacial® </b>
+                          <span href="" data-toggle="popover" title="Popover Header"
+                            data-content="Non-invasive alternative to traditional rhinoplasty. A great choice for those who want to improve the shape of their nose"><i
+                              class="fa fa-info-circle"></i></span>
+
+                        </p>
+                      </td>
+                      <td><span class="currency">£120</span></td>
+                      <td><input class="btn-checkbox" type="checkbox"></td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p><b>Platinum Hydrafacial® + Dermalux® LED </b>
+                          <span href="" data-toggle="popover" title="Popover Header"
+                            data-content="Non-invasive alternative to traditional rhinoplasty. A great choice for those who want to improve the shape of their nose"><i
+                              class="fa fa-info-circle"></i></span>
+
+                        </p>
+                      </td>
+                      <td><span class="currency">£150</span></td>
+                      <td><input class="btn-checkbox" type="checkbox"></td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p><b>Platinum PLUS Hydrafacial® + Dermalux® LED </b>
+                          <span href="" data-toggle="popover" title="Popover Header"
+                            data-content="Non-invasive alternative to traditional rhinoplasty. A great choice for those who want to improve the shape of their nose"><i
+                              class="fa fa-info-circle"></i></span>
+
+                        </p>
+                      </td>
+                      <td><span class="currency">£210</span></td>
+                      <td><input class="btn-checkbox" type="checkbox"></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
             </div>
-          </div>
-          
-          <!---   Card 8  -->
-          <div class="card">
-            <div class="card-header pt-0 pb-0" id="headingEight">
-              <h5 class="mb-0">
-                <button class="btn btn-link collapsed button-collaps" data-toggle="collapse" data-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
-                  <div class="collaps-sec-1">
-                    <span class="collaps-logo-div">
-                    <img class="collaps-logo-img" src="https://dermamina.pabau.me/cdn/file_attachments/8607/category_images/61d3247364d9a_162939.png?1641227379915">
-                  </span>
-                  <span class="heading-card"> Hydrafacial® </span>
-                  </div>  
 
-                   <div class="collaps-sec-2">
-                    <span class="down-arrow"><i class="arrow-expand fa fa-chevron-down " aria-hidden="true"></i>  </span>
-                  </div>
+            <!---   Card 9  -->
+            <div class="card">
+              <div class="card-header pt-0 pb-0" id="headingNine">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed button-collaps" data-toggle="collapse"
+                    data-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                    <div class="collaps-sec-1">
+                      <span class="collaps-logo-div">
+                        <img class="collaps-logo-img"
+                          src="https://dermamina.pabau.me/cdn/file_attachments/8607/category_images/61d324975c084_163015.jpeg?1641227415730">
+                      </span>
+                      <span class="heading-card"> Skinpen® Microneedling </span>
+                    </div>
 
-                </button>
-              </h5>
+                    <div class="collaps-sec-2">
+                      <span class="down-arrow"><i class="arrow-expand fa fa-chevron-down " aria-hidden="true"></i>
+                      </span>
+                    </div>
+
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseNine" class="collapse" aria-labelledby="headingNine" data-parent="#accordion">
+                <table class="table">
+                  <tbody>
+                    <tr>
+                      <td>
+                        <p><b>SKINPEN® Microneedling </b>
+                          <span href="" data-toggle="popover" title="Popover Header"
+                            data-content="Non-invasive alternative to traditional rhinoplasty. A great choice for those who want to improve the shape of their nose"><i
+                              class="fa fa-info-circle"></i></span>
+
+                        </p>
+                      </td>
+                      <td><span class="currency">£220</span></td>
+                      <td><input class="btn-checkbox" type="checkbox"></td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p><b>PRP Vampire Facial + SKINPEN® Microneedling</b>
+                          <span href="" data-toggle="popover" title="Popover Header"
+                            data-content="Non-invasive alternative to traditional rhinoplasty. A great choice for those who want to improve the shape of their nose"><i
+                              class="fa fa-info-circle"></i></span>
+
+                        </p>
+                      </td>
+                      <td><span class="currency">£500</span></td>
+                      <td><input class="btn-checkbox" type="checkbox"></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
             </div>
-            <div id="collapseEight" class="collapse" aria-labelledby="headingEight" data-parent="#accordion">
-              <table class="table">
-                <tbody>
-                  <tr>
-                    <td><p><b>Signature Hydrafacial® </b> 
-                      <span href="" data-toggle="popover" title="Popover Header" data-content="Non-invasive alternative to traditional rhinoplasty. A great choice for those who want to improve the shape of their nose"><i class="fa fa-info-circle"></i></span>
-                     
-                    </p></td>
-                    <td><span class="currency">£120</span></td>
-                    <td><input class="btn-checkbox" type="checkbox"></td>
-                  </tr>
-                  <tr>
-                    <td><p><b>Platinum Hydrafacial® + Dermalux® LED </b> 
-                      <span href="" data-toggle="popover" title="Popover Header" data-content="Non-invasive alternative to traditional rhinoplasty. A great choice for those who want to improve the shape of their nose"><i class="fa fa-info-circle"></i></span>
-                     
-                    </p></td>
-                    <td><span class="currency">£150</span></td>
-                    <td><input class="btn-checkbox" type="checkbox"></td>
-                  </tr>
-                  <tr>
-                    <td><p><b>Platinum PLUS Hydrafacial® + Dermalux® LED </b> 
-                      <span href="" data-toggle="popover" title="Popover Header" data-content="Non-invasive alternative to traditional rhinoplasty. A great choice for those who want to improve the shape of their nose"><i class="fa fa-info-circle"></i></span>
-                     
-                    </p></td>
-                    <td><span class="currency">£210</span></td>
-                    <td><input class="btn-checkbox" type="checkbox"></td>
-                  </tr>
-                </tbody>
-              </table>
+
+            <!---   Card 10  -->
+            <div class="card">
+              <div class="card-header pt-0 pb-0" id="headingTen">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed button-collaps" data-toggle="collapse"
+                    data-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+                    <div class="collaps-sec-1">
+                      <span class="collaps-logo-div">
+                        <img class="collaps-logo-img"
+                          src="https://dermamina.pabau.me/cdn/file_attachments/8607/category_images/60d08fcb68ef4_141035.jpeg?1624281035810">
+                      </span>
+                      <span class="heading-card"> Advanced Facials </span>
+                    </div>
+
+                    <div class="collaps-sec-2">
+                      <span class="down-arrow"><i class="arrow-expand fa fa-chevron-down " aria-hidden="true"></i>
+                      </span>
+                    </div>
+
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseTen" class="collapse" aria-labelledby="headingTen" data-parent="#accordion">
+                <table class="table">
+                  <tbody>
+                    <tr>
+                      <td>
+                        <p><b>Tailored facial by Dermamina </b>
+                          <span href="" data-toggle="popover" title="Popover Header"
+                            data-content="Non-invasive alternative to traditional rhinoplasty. A great choice for those who want to improve the shape of their nose"><i
+                              class="fa fa-info-circle"></i></span>
+
+                        </p>
+                      </td>
+                      <td><span class="currency">£250</span></td>
+                      <td><input class="btn-checkbox" type="checkbox"></td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p><b>Ultimate Mesotherapy</b>
+                          <span href="" data-toggle="popover" title="Popover Header"
+                            data-content="Non-invasive alternative to traditional rhinoplasty. A great choice for those who want to improve the shape of their nose"><i
+                              class="fa fa-info-circle"></i></span>
+
+                        </p>
+                      </td>
+                      <td><span class="currency">£250</span></td>
+                      <td><input class="btn-checkbox" type="checkbox"></td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p><b>Ultimate Mesotherapy + Dermalux® LED </b>
+                          <span href="" data-toggle="popover" title="Popover Header"
+                            data-content="Non-invasive alternative to traditional rhinoplasty. A great choice for those who want to improve the shape of their nose"><i
+                              class="fa fa-info-circle"></i></span>
+
+                        </p>
+                      </td>
+                      <td><span class="currency">£280</span></td>
+                      <td><input class="btn-checkbox" type="checkbox"></td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p><b>Mesotherapy</b>
+                          <span href="" data-toggle="popover" title="Popover Header"
+                            data-content="Non-invasive alternative to traditional rhinoplasty. A great choice for those who want to improve the shape of their nose"><i
+                              class="fa fa-info-circle"></i></span>
+
+                        </p>
+                      </td>
+                      <td><span class="currency">£180</span></td>
+                      <td><input class="btn-checkbox" type="checkbox"></td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p><b>Mesotherapy + Dermalux® LED </b>
+                          <span href="" data-toggle="popover" title="Popover Header"
+                            data-content="Non-invasive alternative to traditional rhinoplasty. A great choice for those who want to improve the shape of their nose"><i
+                              class="fa fa-info-circle"></i></span>
+
+                        </p>
+                      </td>
+                      <td><span class="currency">£210</span></td>
+                      <td><input class="btn-checkbox" type="checkbox"></td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p><b>Glow Peel</b>
+                          <span href="" data-toggle="popover" title="Popover Header"
+                            data-content="Non-invasive alternative to traditional rhinoplasty. A great choice for those who want to improve the shape of their nose"><i
+                              class="fa fa-info-circle"></i></span>
+
+                        </p>
+                      </td>
+                      <td><span class="currency">£250</span></td>
+                      <td><input class="btn-checkbox" type="checkbox"></td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p><b>Glow Peel + Dermalux® LED </b>
+                          <span href="" data-toggle="popover" title="Popover Header"
+                            data-content="Non-invasive alternative to traditional rhinoplasty. A great choice for those who want to improve the shape of their nose"><i
+                              class="fa fa-info-circle"></i></span>
+
+                        </p>
+                      </td>
+                      <td><span class="currency">£280</span></td>
+                      <td><input class="btn-checkbox" type="checkbox"></td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p><b>Extract & Rejuvenate</b>
+                          <span href="" data-toggle="popover" title="Popover Header"
+                            data-content="Non-invasive alternative to traditional rhinoplasty. A great choice for those who want to improve the shape of their nose"><i
+                              class="fa fa-info-circle"></i></span>
+                        </p>
+                      </td>
+                      <td><span class="currency">£180</span></td>
+                      <td><input class="btn-checkbox" type="checkbox"></td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p><b>Extract & Rejuvenate + Dermalux® LED </b>
+                          <span href="" data-toggle="popover" title="Popover Header"
+                            data-content="Non-invasive alternative to traditional rhinoplasty. A great choice for those who want to improve the shape of their nose"><i
+                              class="fa fa-info-circle"></i></span>
+
+                        </p>
+                      </td>
+                      <td><span class="currency">£210</span></td>
+                      <td><input class="btn-checkbox" type="checkbox"></td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p><b>Glow as you go!</b>
+                          <span href="" data-toggle="popover" title="Popover Header"
+                            data-content="Non-invasive alternative to traditional rhinoplasty. A great choice for those who want to improve the shape of their nose"><i
+                              class="fa fa-info-circle"></i></span>
+
+                        </p>
+                      </td>
+                      <td><span class="currency">£80</span></td>
+                      <td><input class="btn-checkbox" type="checkbox"></td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p><b>Glow as you go! + Dermalux® LED </b>
+                          <span href="" data-toggle="popover" title="Popover Header"
+                            data-content="Non-invasive alternative to traditional rhinoplasty. A great choice for those who want to improve the shape of their nose"><i
+                              class="fa fa-info-circle"></i></span>
+
+                        </p>
+                      </td>
+                      <td><span class="currency">£110</span></td>
+                      <td><input class="btn-checkbox" type="checkbox"></td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p><b>Dermalux® LED </b>
+                          <span href="" data-toggle="popover" title="Popover Header"
+                            data-content="Non-invasive alternative to traditional rhinoplasty. A great choice for those who want to improve the shape of their nose"><i
+                              class="fa fa-info-circle"></i></span>
+
+                        </p>
+                      </td>
+                      <td><span class="currency">£60</span></td>
+                      <td><input class="btn-checkbox" type="checkbox"></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
             </div>
-          </div>
-          
-          <!---   Card 9  -->
-          <div class="card">
-            <div class="card-header pt-0 pb-0" id="headingNine">
-              <h5 class="mb-0">
-                <button class="btn btn-link collapsed button-collaps" data-toggle="collapse" data-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
-                  <div class="collaps-sec-1">
-                    <span class="collaps-logo-div">
-                    <img class="collaps-logo-img" src="https://dermamina.pabau.me/cdn/file_attachments/8607/category_images/61d324975c084_163015.jpeg?1641227415730">
-                  </span>
-                  <span class="heading-card"> Skinpen® Microneedling </span>
-                  </div>  
 
-                   <div class="collaps-sec-2">
-                    <span class="down-arrow"><i class="arrow-expand fa fa-chevron-down " aria-hidden="true"></i>  </span>
-                  </div>
+            <!---   Card 11  -->
+            <div class="card">
+              <div class="card-header pt-0 pb-0" id="headingEleven">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed button-collaps" data-toggle="collapse"
+                    data-target="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">
+                    <div class="collaps-sec-1">
+                      <span class="collaps-logo-div">
+                        <img class="collaps-logo-img"
+                          src="https://f67d6725d14cba41b1c3-6d41f35451e3c766516757e611f137b2.ssl.cf3.rackcdn.com/1d005e42a64c7e52b08c597ee77f9db9.png">
+                      </span>
+                      <span class="heading-card"> Laser Hair Removal </span>
+                    </div>
 
-                </button>
-              </h5>
+                    <div class="collaps-sec-2">
+                      <span class="down-arrow"><i class="arrow-expand fa fa-chevron-down " aria-hidden="true"></i>
+                      </span>
+                    </div>
+
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseEleven" class="collapse" aria-labelledby="headingEleven" data-parent="#accordion">
+                <table class="table">
+                  <tbody>
+                    <tr>
+                      <td>
+                        <p><b>Laser Consultation/Patch Test </b>
+                          <span href="" data-toggle="popover" title="Popover Header"
+                            data-content="Non-invasive alternative to traditional rhinoplasty. A great choice for those who want to improve the shape of their nose"><i
+                              class="fa fa-info-circle"></i></span>
+
+                        </p>
+                      </td>
+                      <td><span class="currency">£0</span></td>
+                      <td><input class="btn-checkbox" type="checkbox"></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
             </div>
-            <div id="collapseNine" class="collapse" aria-labelledby="headingNine" data-parent="#accordion">
-              <table class="table">
-                <tbody>
-                  <tr>
-                    <td><p><b>SKINPEN® Microneedling </b> 
-                      <span href="" data-toggle="popover" title="Popover Header" data-content="Non-invasive alternative to traditional rhinoplasty. A great choice for those who want to improve the shape of their nose"><i class="fa fa-info-circle"></i></span>
-                     
-                    </p></td>
-                    <td><span class="currency">£220</span></td>
-                    <td><input class="btn-checkbox" type="checkbox"></td>
-                  </tr>
-                  <tr>
-                    <td><p><b>PRP Vampire Facial + SKINPEN® Microneedling</b> 
-                      <span href="" data-toggle="popover" title="Popover Header" data-content="Non-invasive alternative to traditional rhinoplasty. A great choice for those who want to improve the shape of their nose"><i class="fa fa-info-circle"></i></span>
-                     
-                    </p></td>
-                    <td><span class="currency">£500</span></td>
-                    <td><input class="btn-checkbox" type="checkbox"></td>
-                  </tr>
-                </tbody>
-              </table>
+
+            <!---   Card 11  -->
+            <div class="card">
+              <div class="card-header pt-0 pb-0" id="headingTwelve">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed button-collaps" data-toggle="collapse"
+                    data-target="#collapseTwelve" aria-expanded="false" aria-controls="collapseTwelve">
+                    <div class="collaps-sec-1">
+                      <span class="collaps-logo-div">
+                        <img class="collaps-logo-img"
+                          src="https://dermamina.pabau.me/cdn/file_attachments/8607/category_images/5ecfa083a42f2_122907.png?1590665346501">
+                      </span>
+                      <span class="heading-card"> Consultation </span>
+                    </div>
+
+                    <div class="collaps-sec-2">
+                      <span class="down-arrow"><i class="arrow-expand fa fa-chevron-down " aria-hidden="true"></i>
+                      </span>
+                    </div>
+
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseTwelve" class="collapse" aria-labelledby="headingTwelve" data-parent="#accordion">
+                <table class="table">
+                  <tbody>
+                    <tr>
+                      <td>
+                        <p><b>Laser Consultation/Patch Test </b>
+                          <span href="" data-toggle="popover" title="Popover Header"
+                            data-content="Non-invasive alternative to traditional rhinoplasty. A great choice for those who want to improve the shape of their nose"><i
+                              class="fa fa-info-circle"></i></span>
+
+                        </p>
+                      </td>
+                      <td><span class="currency">£0</span></td>
+                      <td><input class="btn-checkbox" type="checkbox"></td>
+                    </tr>
+
+                    <tr>
+                      <td>
+                        <p><b>Non-Surgical Nose Job Consultation </b>
+                          <span href="" data-toggle="popover" title="Popover Header"
+                            data-content="Non-invasive alternative to traditional rhinoplasty. A great choice for those who want to improve the shape of their nose"><i
+                              class="fa fa-info-circle"></i></span>
+
+                        </p>
+                      </td>
+                      <td><span class="currency">£20</span></td>
+                      <td><input class="btn-checkbox" type="checkbox"></td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p><b>Dermal Filler Consultation </b>
+                          <span href="" data-toggle="popover" title="Popover Header"
+                            data-content="Non-invasive alternative to traditional rhinoplasty. A great choice for those who want to improve the shape of their nose"><i
+                              class="fa fa-info-circle"></i></span>
+
+                        </p>
+                      </td>
+                      <td><span class="currency">£20</span></td>
+                      <td><input class="btn-checkbox" type="checkbox"></td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p><b>Skin Consultation </b>
+                          <span href="" data-toggle="popover" title="Popover Header"
+                            data-content="Non-invasive alternative to traditional rhinoplasty. A great choice for those who want to improve the shape of their nose"><i
+                              class="fa fa-info-circle"></i></span>
+
+                        </p>
+                      </td>
+                      <td><span class="currency">£20</span></td>
+                      <td><input class="btn-checkbox" type="checkbox"></td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p><b>Anti-ageing Consultation </b>
+                          <span href="" data-toggle="popover" title="Popover Header"
+                            data-content="Non-invasive alternative to traditional rhinoplasty. A great choice for those who want to improve the shape of their nose"><i
+                              class="fa fa-info-circle"></i></span>
+
+                        </p>
+                      </td>
+                      <td><span class="currency">£20</span></td>
+                      <td><input class="btn-checkbox" type="checkbox"></td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p><b>Hair/Beard Consultation </b>
+                          <span href="" data-toggle="popover" title="Popover Header"
+                            data-content="Non-invasive alternative to traditional rhinoplasty. A great choice for those who want to improve the shape of their nose"><i
+                              class="fa fa-info-circle"></i></span>
+
+                        </p>
+                      </td>
+                      <td><span class="currency">£20</span></td>
+                      <td><input class="btn-checkbox" type="checkbox"></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
             </div>
-          </div>
-          
-          <!---   Card 10  -->
-          <div class="card">
-            <div class="card-header pt-0 pb-0" id="headingTen">
-              <h5 class="mb-0">
-                <button class="btn btn-link collapsed button-collaps" data-toggle="collapse" data-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
-                  <div class="collaps-sec-1">
-                    <span class="collaps-logo-div">
-                    <img class="collaps-logo-img" src="https://dermamina.pabau.me/cdn/file_attachments/8607/category_images/60d08fcb68ef4_141035.jpeg?1624281035810">
-                  </span>
-                  <span class="heading-card"> Advanced Facials </span>
-                  </div>  
 
-                   <div class="collaps-sec-2">
-                    <span class="down-arrow"><i class="arrow-expand fa fa-chevron-down " aria-hidden="true"></i>  </span>
-                  </div>
+            <!---   Card 12  -->
+            <div class="card">
+              <div class="card-header pt-0 pb-0" id="headingThirteen">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed button-collaps" data-toggle="collapse"
+                    data-target="#collapseThirteen" aria-expanded="false" aria-controls="collapseThirteen">
+                    <div class="collaps-sec-1">
+                      <span class="collaps-logo-div">
+                        <img class="collaps-logo-img"
+                          src="https://f67d6725d14cba41b1c3-6d41f35451e3c766516757e611f137b2.ssl.cf3.rackcdn.com/bf906c9484e9b4a2aff736975419803d.png">
+                      </span>
+                      <span class="heading-card">Follow up</span>
+                    </div>
 
-                </button>
-              </h5>
+                    <div class="collaps-sec-2">
+                      <span class="down-arrow"><i class="arrow-expand fa fa-chevron-down " aria-hidden="true"></i>
+                      </span>
+                    </div>
+
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseThirteen" class="collapse" aria-labelledby="headingThirteen" data-parent="#accordion">
+                <table class="table">
+                  <tbody>
+                    <td>
+                      <p><b>Follow up</b>
+                        <span href="" data-toggle="popover" title="Popover Header"
+                          data-content="Non-invasive alternative to traditional rhinoplasty. A great choice for those who want to improve the shape of their nose"><i
+                            class="fa fa-info-circle"></i></span>
+
+                      </p>
+                    </td>
+                    <td><span class="currency">£50</span></td>
+                    <td><input class="btn-checkbox" type="checkbox"></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
             </div>
-            <div id="collapseTen" class="collapse" aria-labelledby="headingTen" data-parent="#accordion">
-              <table class="table">
-                <tbody>
-                  <tr>
-                    <td><p><b>Tailored facial by Dermamina </b> 
-                      <span href="" data-toggle="popover" title="Popover Header" data-content="Non-invasive alternative to traditional rhinoplasty. A great choice for those who want to improve the shape of their nose"><i class="fa fa-info-circle"></i></span>
-                     
-                    </p></td>
-                    <td><span class="currency">£250</span></td>
-                    <td><input class="btn-checkbox" type="checkbox"></td>
-                  </tr>
-                  <tr>
-                    <td><p><b>Ultimate Mesotherapy</b> 
-                      <span href="" data-toggle="popover" title="Popover Header" data-content="Non-invasive alternative to traditional rhinoplasty. A great choice for those who want to improve the shape of their nose"><i class="fa fa-info-circle"></i></span>
-                     
-                    </p></td>
-                    <td><span class="currency">£250</span></td>
-                    <td><input class="btn-checkbox" type="checkbox"></td>
-                  </tr> 
-                  <tr>
-                    <td><p><b>Ultimate Mesotherapy + Dermalux® LED </b> 
-                      <span href="" data-toggle="popover" title="Popover Header" data-content="Non-invasive alternative to traditional rhinoplasty. A great choice for those who want to improve the shape of their nose"><i class="fa fa-info-circle"></i></span>
-                     
-                    </p></td>
-                    <td><span class="currency">£280</span></td>
-                    <td><input class="btn-checkbox" type="checkbox"></td>
-                  </tr>
-                  <tr>
-                    <td><p><b>Mesotherapy</b> 
-                      <span href="" data-toggle="popover" title="Popover Header" data-content="Non-invasive alternative to traditional rhinoplasty. A great choice for those who want to improve the shape of their nose"><i class="fa fa-info-circle"></i></span>
-                     
-                    </p></td>
-                    <td><span class="currency">£180</span></td>
-                    <td><input class="btn-checkbox" type="checkbox"></td>
-                  </tr>
-                  <tr>
-                    <td><p><b>Mesotherapy + Dermalux® LED </b> 
-                      <span href="" data-toggle="popover" title="Popover Header" data-content="Non-invasive alternative to traditional rhinoplasty. A great choice for those who want to improve the shape of their nose"><i class="fa fa-info-circle"></i></span>
-                     
-                    </p></td>
-                    <td><span class="currency">£210</span></td>
-                    <td><input class="btn-checkbox" type="checkbox"></td>
-                  </tr>
-                  <tr>
-                    <td><p><b>Glow Peel</b> 
-                      <span href="" data-toggle="popover" title="Popover Header" data-content="Non-invasive alternative to traditional rhinoplasty. A great choice for those who want to improve the shape of their nose"><i class="fa fa-info-circle"></i></span>
-                     
-                    </p></td>
-                    <td><span class="currency">£250</span></td>
-                    <td><input class="btn-checkbox" type="checkbox"></td>
-                  </tr>
-                  <tr>
-                    <td><p><b>Glow Peel + Dermalux® LED </b> 
-                      <span href="" data-toggle="popover" title="Popover Header" data-content="Non-invasive alternative to traditional rhinoplasty. A great choice for those who want to improve the shape of their nose"><i class="fa fa-info-circle"></i></span>
-                     
-                    </p></td>
-                    <td><span class="currency">£280</span></td>
-                    <td><input class="btn-checkbox" type="checkbox"></td>
-                  </tr>
-                  <tr>
-                    <td><p><b>Extract & Rejuvenate</b> 
-                      <span href="" data-toggle="popover" title="Popover Header" data-content="Non-invasive alternative to traditional rhinoplasty. A great choice for those who want to improve the shape of their nose"><i class="fa fa-info-circle"></i></span>
-                     
-                    </p></td>
-                    <td><span class="currency">£180</span></td>
-                    <td><input class="btn-checkbox" type="checkbox"></td>
-                  </tr>
-                  <tr>
-                    <td><p><b>Extract & Rejuvenate + Dermalux® LED </b> 
-                      <span href="" data-toggle="popover" title="Popover Header" data-content="Non-invasive alternative to traditional rhinoplasty. A great choice for those who want to improve the shape of their nose"><i class="fa fa-info-circle"></i></span>
-                     
-                    </p></td>
-                    <td><span class="currency">£210</span></td>
-                    <td><input class="btn-checkbox" type="checkbox"></td>
-                  </tr>
-                  <tr>
-                    <td><p><b>Glow as you go!</b> 
-                      <span href="" data-toggle="popover" title="Popover Header" data-content="Non-invasive alternative to traditional rhinoplasty. A great choice for those who want to improve the shape of their nose"><i class="fa fa-info-circle"></i></span>
-                     
-                    </p></td>
-                    <td><span class="currency">£80</span></td>
-                    <td><input class="btn-checkbox" type="checkbox"></td>
-                  </tr>
-                  <tr>
-                    <td><p><b>Glow as you go! + Dermalux® LED </b> 
-                      <span href="" data-toggle="popover" title="Popover Header" data-content="Non-invasive alternative to traditional rhinoplasty. A great choice for those who want to improve the shape of their nose"><i class="fa fa-info-circle"></i></span>
-                     
-                    </p></td>
-                    <td><span class="currency">£110</span></td>
-                    <td><input class="btn-checkbox" type="checkbox"></td>
-                  </tr>
-                  <tr>
-                    <td><p><b>Dermalux® LED </b> 
-                      <span href="" data-toggle="popover" title="Popover Header" data-content="Non-invasive alternative to traditional rhinoplasty. A great choice for those who want to improve the shape of their nose"><i class="fa fa-info-circle"></i></span>
-                     
-                    </p></td>
-                    <td><span class="currency">£60</span></td>
-                    <td><input class="btn-checkbox" type="checkbox"></td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-
-          <!---   Card 11  -->
-          <div class="card">
-            <div class="card-header pt-0 pb-0" id="headingEleven">
-              <h5 class="mb-0">
-                <button class="btn btn-link collapsed button-collaps" data-toggle="collapse" data-target="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">
-                  <div class="collaps-sec-1">
-                    <span class="collaps-logo-div">
-                    <img class="collaps-logo-img" src="https://f67d6725d14cba41b1c3-6d41f35451e3c766516757e611f137b2.ssl.cf3.rackcdn.com/1d005e42a64c7e52b08c597ee77f9db9.png">
-                  </span>
-                  <span class="heading-card"> Laser Hair Removal </span>
-                  </div>  
-
-                   <div class="collaps-sec-2">
-                    <span class="down-arrow"><i class="arrow-expand fa fa-chevron-down " aria-hidden="true"></i>  </span>
-                  </div>
-
-                </button>
-              </h5>
-            </div>
-            <div id="collapseEleven" class="collapse" aria-labelledby="headingEleven" data-parent="#accordion">
-              <table class="table">
-                <tbody>
-                  <tr>
-                    <td><p><b>Laser Consultation/Patch Test </b> 
-                      <span href="" data-toggle="popover" title="Popover Header" data-content="Non-invasive alternative to traditional rhinoplasty. A great choice for those who want to improve the shape of their nose"><i class="fa fa-info-circle"></i></span>
-                     
-                    </p></td>
-                    <td><span class="currency">£0</span></td>
-                    <td><input class="btn-checkbox" type="checkbox"></td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-
-          <!---   Card 11  -->
-          <div class="card">
-            <div class="card-header pt-0 pb-0" id="headingTwelve">
-              <h5 class="mb-0">
-                <button class="btn btn-link collapsed button-collaps" data-toggle="collapse" data-target="#collapseTwelve" aria-expanded="false" aria-controls="collapseTwelve">
-                  <div class="collaps-sec-1">
-                    <span class="collaps-logo-div">
-                    <img class="collaps-logo-img" src="https://dermamina.pabau.me/cdn/file_attachments/8607/category_images/5ecfa083a42f2_122907.png?1590665346501">
-                  </span>
-                  <span class="heading-card"> Consultation </span>
-                  </div>  
-
-                   <div class="collaps-sec-2">
-                    <span class="down-arrow"><i class="arrow-expand fa fa-chevron-down " aria-hidden="true"></i>  </span>
-                  </div>
-
-                </button>
-              </h5>
-            </div>
-            <div id="collapseTwelve" class="collapse" aria-labelledby="headingTwelve" data-parent="#accordion">
-              <table class="table">
-                <tbody>
-                  <tr>
-                    <td><p><b>Laser Consultation/Patch Test </b> 
-                      <span href="" data-toggle="popover" title="Popover Header" data-content="Non-invasive alternative to traditional rhinoplasty. A great choice for those who want to improve the shape of their nose"><i class="fa fa-info-circle"></i></span>
-                     
-                    </p></td>
-                    <td><span class="currency">£0</span></td>
-                    <td><input class="btn-checkbox" type="checkbox"></td>
-                  </tr>
-
-                  <tr>
-                    <td><p><b>Non-Surgical Nose Job Consultation </b> 
-                      <span href="" data-toggle="popover" title="Popover Header" data-content="Non-invasive alternative to traditional rhinoplasty. A great choice for those who want to improve the shape of their nose"><i class="fa fa-info-circle"></i></span>
-                     
-                    </p></td>
-                    <td><span class="currency">£20</span></td>
-                    <td><input class="btn-checkbox" type="checkbox"></td>
-                  </tr>
-                  <tr>
-                    <td><p><b>Dermal Filler Consultation </b> 
-                      <span href="" data-toggle="popover" title="Popover Header" data-content="Non-invasive alternative to traditional rhinoplasty. A great choice for those who want to improve the shape of their nose"><i class="fa fa-info-circle"></i></span>
-                     
-                    </p></td>
-                    <td><span class="currency">£20</span></td>
-                    <td><input class="btn-checkbox" type="checkbox"></td>
-                  </tr>
-                  <tr>
-                    <td><p><b>Skin Consultation </b> 
-                      <span href="" data-toggle="popover" title="Popover Header" data-content="Non-invasive alternative to traditional rhinoplasty. A great choice for those who want to improve the shape of their nose"><i class="fa fa-info-circle"></i></span>
-                     
-                    </p></td>
-                    <td><span class="currency">£20</span></td>
-                    <td><input class="btn-checkbox" type="checkbox"></td>
-                  </tr>
-                  <tr>
-                    <td><p><b>Anti-ageing Consultation </b> 
-                      <span href="" data-toggle="popover" title="Popover Header" data-content="Non-invasive alternative to traditional rhinoplasty. A great choice for those who want to improve the shape of their nose"><i class="fa fa-info-circle"></i></span>
-                     
-                    </p></td>
-                    <td><span class="currency">£20</span></td>
-                    <td><input class="btn-checkbox" type="checkbox"></td>
-                  </tr>
-                  <tr>
-                    <td><p><b>Hair/Beard Consultation </b> 
-                      <span href="" data-toggle="popover" title="Popover Header" data-content="Non-invasive alternative to traditional rhinoplasty. A great choice for those who want to improve the shape of their nose"><i class="fa fa-info-circle"></i></span>
-                     
-                    </p></td>
-                    <td><span class="currency">£20</span></td>
-                    <td><input class="btn-checkbox" type="checkbox"></td>
-                  </tr> 
-                </tbody>
-              </table>
-            </div>
-          </div>
-
-          <!---   Card 12  -->
-          <div class="card">
-            <div class="card-header pt-0 pb-0" id="headingThirteen">
-              <h5 class="mb-0">
-                <button class="btn btn-link collapsed button-collaps" data-toggle="collapse" data-target="#collapseThirteen" aria-expanded="false" aria-controls="collapseThirteen">
-                  <div class="collaps-sec-1">
-                    <span class="collaps-logo-div">
-                    <img class="collaps-logo-img" src="https://f67d6725d14cba41b1c3-6d41f35451e3c766516757e611f137b2.ssl.cf3.rackcdn.com/bf906c9484e9b4a2aff736975419803d.png">
-                  </span>
-                  <span class="heading-card">Follow up</span>
-                  </div>  
-
-                   <div class="collaps-sec-2">
-                    <span class="down-arrow"><i class="arrow-expand fa fa-chevron-down " aria-hidden="true"></i>  </span>
-                  </div>
-
-                </button>
-              </h5>
-            </div>
-            <div id="collapseThirteen" class="collapse" aria-labelledby="headingThirteen" data-parent="#accordion">
-              <table class="table">
-                <tbody>
-                  <td><p><b>Follow up</b> 
-                    <span href="" data-toggle="popover" title="Popover Header" data-content="Non-invasive alternative to traditional rhinoplasty. A great choice for those who want to improve the shape of their nose"><i class="fa fa-info-circle"></i></span>
-                   
-                  </p></td>
-                  <td><span class="currency">£50</span></td>
-                  <td><input class="btn-checkbox" type="checkbox"></td>
-                </tr> 
-                </tbody>
-              </table>
-            </div>
-          </div>
-
-        </div>
-
-        </div>
-          </div>
-
-            <!----- For Input Section ----->
-              <div class="input-div">
+            <div class="input-div">
               <input placeholder="Do you have any comments you want to add to your booking?">
               <button type="button" class="next-step-btn btn btn-primary"> Next Step </button>
-              </div>
+            </div>
+      
 
-              <!-----For 3rd page --------->
-              <div class="tab-content" id="pills-tabContent">
-                <div class="tab-pane fade show " id="pills-Changestaff" role="tabpanel" aria-labelledby="pills-Changestaff-tab">
-                  Content 3
-                </div> 
-              </div>
-    </div>
-    </div>
+          </div>
+
+        </div>
+      <!----- For Input Section ----->
+      
+      <!-----For 3rd page --------->
+     
+        <div class="tab-pane " id="pills-Changestaff" role="tabpanel" aria-labelledby="pills-Changestaff-tab">
+          <div class="text-center">
+            <h3>Available appointments</h3>
+          <p>Please choose an available appointment below</p>
+          </div>
+          <div class="row">
+            <div class="col-sm-6 col-md-6 col-lg-6">
+              <p>Date: <input type="text" id="datepicker"></p>
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-6">
+
+            </div>
+          </div>
+          <!-- <form action=method="post">
+            data: <input type="date" name=" " value=" ">
+          </form> -->
+          
+        </div>
+
+    
+    <!-- <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+      <li class="nav-item">
+        <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">
+          
+          <img class="img-1" src="https://connect-dermamina.pabau.me/redesign_icons/location.svg">
+        
+        <div class="stepper-status text-center">
+          <span class="heading-dermamina">Dermamina </span>
+        </div>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">
+          <img class="img-1" src="https://connect-dermamina.pabau.me/redesign_icons/location.svg">
+        
+          <div class="stepper-status text-center">
+            <span class="heading-dermamina">Dermamina </span>
+          </div>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">
+          <img class="img-1" src="https://connect-dermamina.pabau.me/redesign_icons/location.svg">
+        
+          <div class="stepper-status text-center">
+            <span class="heading-dermamina">Dermamina </span>
+          </div>
+        </a>
+      </li>
+    </ul> -->
+    <!-- <div class="tab-content" id="pills-tabContent">
+      <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+
+
+        
+          <div class="card tab-pane fade show active" id="pills-home" role="tabpanel"
+            aria-labelledby="pills-home-tab">  
+      
+      </div>
+      <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi eum quasi animi aperiam atque dolorum, labore facere, nostrum officiis tempore laboriosam similique quibusdam aut, nulla accusamus ipsa voluptatem beatae architecto!
+      </div>
+      <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">...</div>
+    </div> -->
+
+    <!----- section 4 ------>
+
+
+  </div> 
+
+  
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+    
 
     <script>
-      $(document).ready(function(){
-          $('[data-toggle="popover"]').popover();   
+      $(document).ready(function () {
+        $('[data-toggle="popover"]').popover();
       });
-      </script>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  </body>
+  
+      $( function() {
+      $( "#datepicker" ).datepicker({
+        showButtonPanel: true
+      });
+    } );
+ 
+    </script>
+</body>
+
 </html>
