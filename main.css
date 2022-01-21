@@ -92,3 +92,12 @@ b{
 .logo-3-main:hover{
     background: rgb(165, 165, 165);
 }
+tr:hover {
+    background: #ded;
+}
+.checking-box{
+    border: 2px solid #00a993;
+}
+.card-header:hover {
+    background: #b6c1c1 !important;
+}

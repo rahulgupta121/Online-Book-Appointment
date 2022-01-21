@@ -19,8 +19,8 @@
   <body> 
     <div class="main-div-home">
       <div class="container main-div">
-        <div class="row d-flex mb-5">
-          <div class="logo-1-main-div col-sm-3 col-md-3 col-lg-3 text-center">
+        <!-- <div class="row d-flex mb-5">
+          <div class="logo-1-main-div col-sm-3 col-md-3 col-lg-3 text-center nav nav-pills" id="pills-tab" role="tablist">
             <div class="logo-1-main">
               <a class="">
               <img class="img-1" src="https://connect-dermamina.pabau.me/redesign_icons/location.svg">
@@ -62,17 +62,40 @@
              </div>
             </div>
           </div>
+        </div> -->
+
+        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Home</a>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Profile</a>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Contact</a>
+          </li>
+        </ul>
+
+        <div class="tab-content" id="pills-tabContent">
+          <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">Hello</div>
+          <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">Hello 1</div>
+          <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">Hello 2</div>
         </div>
+        
+
         <!---- For pop Message ---->
         <div class="pop-message">
           
           <p class="mb-0"><i class="fa fa-commenting-o" aria-hidden="true"></i> All appointments start with a consultation to answer all your questions and to understand what you are looking to achieve.   </p>
         </div>
 
+        
+        
         <!---  acordian collaps   -->
-        <div id="accordion">
+        <div>
+        <div id="accordion" >
           <!-- card 1 for accordian -->
-          <div class="card">
+          <div class="card" id="multiCollapseExample1">
             <div class="card-header pb-0" id="headingOne">
               <h5 class="mb-0">
                 <button class="btn btn-link collapsed button-collaps" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
@@ -96,7 +119,9 @@
               <table class="table">
                 <tbody>
                   <tr>
-                    <td><p><b> Non-Surgical Nose Job</b> 
+                    <td  class="form-check">
+                    <p>
+                    <b> Non-Surgical Nose Job</b> 
                       <span href="#" data-toggle="popover" title="Popover Header" data-content="Non-invasive alternative to traditional rhinoplasty. A great choice for those who want to improve the shape of their nose"><i class="fa fa-info-circle"></i></span>
                      
                     </p></td>
@@ -109,7 +134,8 @@
                      
                     </p></td> 
                     <td><span class="currency"> £860</span></td>
-                    <td><input class="btn-checkbox" type="checkbox"></td>
+                    <td><input class="btn-checkbox" type="checkbox">
+                        <span class="checking-box"></span></td>
                   </tr>
                   <tr>
                     <td><p><b>Non-Surgical Nose Job + Tear Trough</b> 
@@ -937,7 +963,7 @@
             </div>
           </div>
 
-         
+        </div>
         </div>
               <div class="input-div">
               <input placeholder="Do you have any comments you want to add to your booking?">
