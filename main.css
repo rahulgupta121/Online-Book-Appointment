@@ -11,7 +11,7 @@
     padding: 0;
     display: block;
     margin: 14px auto;
-    width: 241px;
+    width: 100%;
     background: #526069;
     border-right: 1px solid #fff;
     color: #fff;
@@ -95,9 +95,22 @@ b{
 tr:hover {
     background: #ded;
 }
-.checking-box{
-    border: 2px solid #00a993;
-}
 .card-header:hover {
     background: #b6c1c1 !important;
 }
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #fff;
+    background-color: white;
+}
+.nav {
+    /* display: -webkit-box; */
+    display: -ms-flexbox;
+    /* display: flex; */
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+
