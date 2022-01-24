@@ -17,55 +17,98 @@
         <div class="row">
             <div class="col-lg-12 col-sm-12 col-md-12">
                 <p>Already have account?</p>
-                <button class="btn btn-danger">Login</button>
+                <button class="btn btn-danger login-btn">Login</button>
             </div>
         </div>
 
         <div class="row">
-            <div class="col-lg-6 col-sm-6 col-md-6">
-                <p class="contact-info"><span class="contact-info1">1</span>Contact Information</p>
+            <div class="col-lg-6 col-sm-6 col-md-6 heading-title-div">
+                <h2 class="heading-title"><span class="heading-number">1</span>Contact Information</h2>
             </div>
         </div>
 
         
         <div class="row">
-            <div class="col-lg-6 col-xs-12 col-md-6">
+            <div class="col-lg-6 col-xs-12 col-md-6 mt-3">
                 <p class="first-name">*First Name</p>
-                <input placeholder="">
+                <input placeholder="" class="login-input">
             </div>
-            <div class="col-lg-6 col-xs-12 col-md-6">
+            <div class="col-lg-6 col-xs-12 col-md-6 mt-3">
                 <p class="last-name">*Last Name</p>
-                <input placeholder="">
+                <input placeholder="" class="login-input">
             </div>
-            <div class="col-lg-6 col-xs-12 col-md-6">
+            <div class="col-lg-6 col-xs-12 col-md-6 mt-3">
                 <p class="last-name">*Mobile Number</p>
-                <input placeholder="">
+                <input placeholder="" class="login-input">
             </div>
-            <div class="col-lg-6 col-xs-12 col-md-6">
-                <p class="last-name">*How did you hear about us?</p>
-                <input placeholder="">
+            <div class="col-lg-6 col-xs-12 col-md-6  mt-3"> 
+                <label for="option-name">*How did you hear about us?</label>
+                <select id="option-name" class="form-select">
+                <option disabled selected>Choose Marketing Resource</option>
+                <option value="saab">Saab</option>
+                <option value="opel">Opel</option>
+                <option value="audi">Audi</option>
+                </select>
+               
             </div>
-            <div class="col-lg-12 col-xs-12 col-md-12">
-                <input class="without-registration" type="checkbox">Complete without registration</input>
+            <div class="col-lg-12 col-xs-12 col-md-12 mt-3">
+                <input class="without-registration" type="checkbox"><b class="complete-reg">Complete without registration</b></input>
             </div>
-            <div class="col-lg-6 col-xs-12 col-md-6">
+            <div class="col-lg-6 col-xs-12 col-md-6 mt-3">
                 <p class="last-name">*E-mail</p>
-                <input placeholder="">
+                <input placeholder="" class="login-input">
             </div>
-            <div class="col-lg-6 col-xs-12 col-md-6">
+            <div class="col-lg-6 col-xs-12 col-md-6 mt-3">
                 <div class="form-group">
                 <p class="last-name">*Password</p>
-                <input placeholder="">
+                <input placeholder="" class="login-input">
                 </div>
                 <div class="form-group">
                 <p class="last-name">*Confirm Password</p>
-                <input placeholder="">
+                <input placeholder="" class="login-input">
                 </div>
             </div>
             
         </div>
+        <div class="row">
+            <div class="col-md-3">
+                <b class="heading-content">Email Newsletters</b>
+            </div>
+            <div class="col-md-9">
+                <label><input type="checkbox" class="check-box">Yes, I consent to you emailing me, from time to time, with relevant news and offers.</input></label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <b class="heading-content">SMS Campaigns</b>
+            </div>
+            <div class="col-md-9">
+                <label><input type="checkbox" class="check-box">Yes, I consent to you sending me sms, from time to time, with relevant campaigns.</input></label>
+            </div>
+        </div>
 
+        <div class="row">
+            <div class="col-md-3">
+                <b class="heading-content">Postal Campaigns</b> 
+            </div>
+            <div class="col-md-9">
+                <label><input type="checkbox" class="check-box">Yes, I consent to you calling me, from time to time, with relevant news and offers.</input></label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <b class="heading-content">Privacy Policy</b>
+            </div>
+            <div class="col-md-9">
+                <label><input type="checkbox" class="check-box">* The information you have entered will be stored in Pabau. Details of how we store your information can be found in our privacy policy .</input></label>
+            </div>
+        </div>
 
+        <div class="btn-main-div">
+            <div class="btn-div text-center">
+                <button class="btn btn-danger">Process with Booking</button>
+            </div>
+        </div>
     </div>
 
 </body>

@@ -215,3 +215,40 @@ span.month:last-child{
 .calender-main-div{
     text-align: center;
 }
+
+/* Login Page */
+.login-btn{
+    font-weight: 700;
+    padding: 10px 33px;
+}
+.heading-title{
+    font-size: 28px;
+}
+.heading-number{
+    color: rgb(226, 108, 108); 
+    font-size: 38px;
+}
+.first-name, .last-name{
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 4px;
+}
+.login-input{
+    width: 100%;
+}
+.form-select{
+    width: 100%;
+    height: 31px;
+}
+.heading-title-div{
+    border-bottom: 1px solid rgb(225, 226, 225);
+}
+.heading-content{
+    font-size: 14px;
+}
+.check-box, .without-registration{
+    margin: 0px 5px 0px 0px;
+}
+.complete-reg{
+    font-size: 16px;
+}
