@@ -151,9 +151,23 @@ td.day {
     text-align: center;
     top: 369px !important;
 }
-th.next{
-    content: "\f054";
+/* th.next{ 
+    content: none;
+    position: relative;
 }
+th.next:before{
+    content: "\f054";
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit; 
+    color: #000;
+    font-size: 18px;
+    padding-right: 0.5em;
+    position: absolute;
+    top: 10px;
+    left: 0;
+} */
 .duration-min{
     font-size: 20px;
     font-weight: 500;
@@ -175,4 +189,29 @@ span.month:first-child{
 }
 span.month:last-child{
     padding: 0px 0px;
+}
+.doc-div{ 
+    display: flex; 
+    text-align: center;
+    width: 100%;
+    justify-content: space-between;
+}
+#slots .slot {
+    background-color: #29B6F6;
+}
+.slots {
+    display: inline-block;
+    /* background-color: #0066CC; */
+    background-color: #6699FF;
+    color: White;
+    padding: 9px;
+    margin-top: 5px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+.calender-content{
+    color: #6699FF;
+}
+.calender-main-div{
+    text-align: center;
 }
